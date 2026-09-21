@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr" data-title-fr="Kamelo et toi · la notice pour les enfants" data-title-en="Kamelo and you · the notice for children">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'sha256-I9BgKOawifnJGNiBx4F5HJiavsiwz4P4nHcMTh/zUJw='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Kamelo et toi · la notice pour les enfants</title>
+<meta name="description" content="Kamelo expliqué aux enfants de 6 à 11 ans, avec des mots simples : ce que fait Kamelo, qui voit tes exercices, et à qui en parler. Kamelo explained to children.">
+<link rel="canonical" href="https://fox1304.github.io/kamelo-site/children.html">
+<meta property="og:url" content="https://fox1304.github.io/kamelo-site/children.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamelo">
+<meta property="og:title" content="Kamelo et toi · la notice pour les enfants">
+<meta property="og:description" content="Kamelo expliqué aux enfants de 6 à 11 ans, avec des mots simples : ce que fait Kamelo, qui voit tes exercices, et à qui en parler. Kamelo explained to children.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF8EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>(function () {
+  var root = document.documentElement, loc = window.location;
+  function langOf(h) {
+    h = (h || "").replace(/^#/, "").toLowerCase();
+    if (h === "en" || h.slice(0, 3) === "en-") return "en";
+    if (h === "fr" || h.slice(0, 3) === "fr-") return "fr";
+    return null;
+  }
+  function browserLang() {
+    var list = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase().slice(0, 2);
+      if (l === "fr" || l === "en") return l;
+    }
+    return "fr";
+  }
+  function apply(lang) {
+    root.setAttribute("data-show", lang);
+    root.setAttribute("lang", lang);
+    var t = root.getAttribute("data-title-" + lang);
+    if (t) document.title = t;
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) {
+      if (sw[i].getAttribute("data-set-lang") === lang) sw[i].setAttribute("aria-current", "true");
+      else sw[i].removeAttribute("aria-current");
+    }
+  }
+  var h = loc.hash.slice(1).toLowerCase();
+  if ((h === "fr" || h === "en") && window.history.replaceState) window.history.replaceState(null, "", loc.pathname + loc.search);
+  apply(langOf(h) || browserLang());
+  window.addEventListener("hashchange", function () { var l = langOf(loc.hash); if (l) apply(l); });
+  document.addEventListener("DOMContentLoaded", function () {
+    apply(root.getAttribute("data-show"));
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) sw[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      apply(this.getAttribute("data-set-lang"));
+    });
+    var art = document.querySelector("[data-kamelo]");
+    var skins = document.querySelectorAll("[data-skin]");
+    for (var j = 0; j < skins.length; j++) skins[j].addEventListener("click", function () {
+      if (art) {
+        art.style.setProperty("--k-skin", this.getAttribute("data-skin"));
+        art.style.setProperty("--k-deep", this.getAttribute("data-deep"));
+        art.style.setProperty("--k-light", this.getAttribute("data-light"));
+      }
+      for (var k = 0; k < skins.length; k++) skins[k].setAttribute("aria-pressed", skins[k] === this ? "true" : "false");
+    });
+  });
+})();</script>
+</head>
+<body class="page-children">
+<a class="skip" href="#main"><span data-lang="fr">Aller au contenu</span><span data-lang="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="40" height="40"><span>Kamelo</span></a>
+    <nav class="nav" aria-label="Menu">
+      <ul>
+        <li data-lang="fr"><a href="index.html#fr-comment-ca-marche">Comment ça marche</a></li>
+        <li data-lang="fr"><a href="privacy.html#fr">Confidentialité</a></li>
+        <li data-lang="fr"><a href="support.html#fr">Aide</a></li>
+        <li data-lang="en" lang="en"><a href="index.html#en-how-it-works">How it works</a></li>
+        <li data-lang="en" lang="en"><a href="privacy.html#en">Privacy</a></li>
+        <li data-lang="en" lang="en"><a href="support.html#en">Help</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <a href="#fr" hreflang="fr" lang="fr" data-set-lang="fr" aria-label="Français">FR</a>
+      <a href="#en" hreflang="en" lang="en" data-set-lang="en" aria-label="English">EN</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap narrow kids">
+  <div class="kids-mascot" aria-hidden="true">
+    <svg class="kamelo kamelo-small" viewBox="24 40 306 324" width="180" height="190" focusable="false">
+      <g class="k-body">
+        <path d="M122 272C121.6 263.8 118.1 227.2 119.4 222.6C120.6 218.1 128.1 237.3 129.4 244.8C130.8 252.3 129.8 260.9 127.5 267.7C125.2 274.5 120.4 281.2 115.4 285.7C110.4 290.2 103.4 293.4 97.3 294.8C91.1 296.2 84 295.7 78.3 294C72.6 292.3 67.1 288.6 63.3 284.6C59.5 280.7 56.8 275.2 55.5 270.3C54.3 265.4 54.6 259.8 55.8 255.3C57.1 250.9 59.9 246.6 62.9 243.6C65.8 240.7 70 238.6 73.6 237.6C77.3 236.7 81.4 237 84.6 237.9C87.8 238.8 90.9 240.9 92.9 243C94.9 245.1 96.1 248.1 96.7 250.5C97.2 252.9 96.1 256.4 96 257.6" fill="none" stroke="#1E2140" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="k-skin-stroke" d="M122 272C121.6 263.8 118.1 227.2 119.4 222.6C120.6 218.1 128.1 237.3 129.4 244.8C130.8 252.3 129.8 260.9 127.5 267.7C125.2 274.5 120.4 281.2 115.4 285.7C110.4 290.2 103.4 293.4 97.3 294.8C91.1 296.2 84 295.7 78.3 294C72.6 292.3 67.1 288.6 63.3 284.6C59.5 280.7 56.8 275.2 55.5 270.3C54.3 265.4 54.6 259.8 55.8 255.3C57.1 250.9 59.9 246.6 62.9 243.6C65.8 240.7 70 238.6 73.6 237.6C77.3 236.7 81.4 237 84.6 237.9C87.8 238.8 90.9 240.9 92.9 243C94.9 245.1 96.1 248.1 96.7 250.5C97.2 252.9 96.1 256.4 96 257.6" fill="none" stroke="#2FC4B2" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect class="k-deep" x="107" y="295" width="26" height="38" rx="13" fill="#1F8C80" stroke="#1E2140" stroke-width="6"/>
+        <circle class="k-deep" cx="116" cy="334" r="7.5" fill="#1F8C80" stroke="#1E2140" stroke-width="6"/>
+        <rect class="k-skin" x="146" y="295" width="28" height="46" rx="14" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <circle class="k-skin" cx="167" cy="341" r="8" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <circle class="k-skin" cx="153" cy="341" r="8" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <ellipse class="k-skin" cx="195" cy="258" rx="88" ry="62" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <ellipse class="k-light" cx="214" cy="276" rx="50" ry="29" fill="#8FE6DA"/>
+        <circle class="k-light" cx="164" cy="218" r="8" fill="#8FE6DA"/>
+        <circle class="k-light" cx="124" cy="264" r="9" fill="#8FE6DA"/>
+        <circle class="k-light" cx="146" cy="238" r="13" fill="#8FE6DA"/>
+        <rect class="k-skin" x="224" y="295" width="28" height="46" rx="14" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <circle class="k-skin" cx="245" cy="341" r="8" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <circle class="k-skin" cx="231" cy="341" r="8" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+      </g>
+      <g class="k-head">
+        <circle class="k-skin" cx="160" cy="86" r="12" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <circle class="k-skin" cx="190" cy="76" r="14" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <circle class="k-skin" cx="222" cy="72" r="16" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <ellipse class="k-skin" cx="218" cy="150" rx="98" ry="75" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <ellipse cx="306" cy="148" rx="2.5" ry="2" fill="#1E2140"/>
+        <circle class="k-skin" cx="189" cy="127" r="34" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <clipPath id="k-eye-b"><circle cx="190" cy="126" r="28"/></clipPath>
+        <circle cx="190" cy="126" r="28" fill="#FFFFFF"/>
+        <g clip-path="url(#k-eye-b)">
+          <g class="k-gaze"><circle class="k-deep" cx="198" cy="121" r="15" fill="#1F8C80"/><circle cx="198" cy="121" r="10.2" fill="#1E2140"/></g>
+          <rect class="k-skin k-lid" x="158" y="96" width="64" height="9" fill="#2FC4B2"/>
+        </g>
+        <circle cx="198.75" cy="115.75" r="4.95" fill="#FFFFFF"/>
+        <circle cx="187.5" cy="130" r="2.55" fill="#FFFFFF"/>
+        <ellipse cx="192" cy="170" rx="11" ry="6.5" fill="#FF7A9A" opacity="0.65"/>
+        <ellipse cx="286" cy="178" rx="14" ry="8" fill="#FF7A9A" opacity="0.65"/>
+        <circle class="k-skin" cx="253" cy="135" r="40" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        <clipPath id="k-eye-f"><circle cx="254" cy="134" r="34"/></clipPath>
+        <circle cx="254" cy="134" r="34" fill="#FFFFFF"/>
+        <g clip-path="url(#k-eye-f)">
+          <g class="k-gaze"><circle class="k-deep" cx="262" cy="129" r="18" fill="#1F8C80"/><circle cx="262" cy="129" r="12.24" fill="#1E2140"/></g>
+          <rect class="k-skin k-lid" x="216" y="98" width="76" height="10" fill="#2FC4B2"/>
+        </g>
+        <circle cx="264.1" cy="122.1" r="5.94" fill="#FFFFFF"/>
+        <circle cx="250.6" cy="139.2" r="3.06" fill="#FFFFFF"/>
+        <path d="M229 191Q246 209 263 191" fill="none" stroke="#1E2140" stroke-width="6" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </div>
+
+  <article data-lang="fr" lang="fr" id="fr">
+    <h1>Kamelo et toi</h1>
+    <p class="kids-hello">Bonjour&#8239;! Je suis Kamelo, un petit caméléon. Je change de couleur quand tu t’entraînes.</p>
+    <ol class="kids-list">
+      <li class="k-card k-french"><h2>À quoi sert Kamelo&#8239;?</h2><p>Kamelo est un jeu pour t’aider à faire tes devoirs.</p><p>Tes parents prennent une photo de ton devoir. Un ordinateur la lit. Puis Kamelo te prépare des exercices.</p></li>
+      <li class="k-card k-lesson"><h2>Un adulte vérifie tout</h2><p>Avant que tu joues, un adulte regarde chaque exercice et dit «&nbsp;c’est bon&nbsp;».</p></li>
+      <li class="k-card k-maths"><h2>La photo s’efface vite</h2><p>La photo de ton devoir est effacée en un jour.</p></li>
+      <li class="k-card k-poetry"><h2>Kamelo se souvient, pour t’aider</h2><p>Kamelo retient les mots que tu as réussis et ceux à revoir.</p><p>Tes parents peuvent voir ce que tu as fait. Personne d’autre ne voit tes exercices.</p></li>
+      <li class="k-card k-language"><h2>Ce que Kamelo ne fait pas</h2><p>Kamelo ne discute pas avec toi&#8239;: il te montre des exercices et il t’encourage.</p><p>Il n’y a pas de publicité et rien à acheter.</p></li>
+      <li class="k-card k-french"><h2>Tu te trompes&#8239;? Ce n’est pas grave</h2><p>C’est un «&nbsp;presque&nbsp;». Le mot reviendra un peu plus tard.</p></li>
+      <li class="k-card k-lesson"><h2>Si quelque chose te dérange</h2><p>Dis-le à un adulte. Dans Kamelo, appuie sur la porte pour appeler un adulte.</p><p>Tu peux demander à tes parents d’effacer tes exercices quand tu veux.</p></li>
+    </ol>
+    <p class="kids-parents">Pour les parents&#8239;: cette notice résume, pour les enfants, notre <a href="privacy.html#fr">politique de confidentialité</a>. Lisez-la ensemble. Elle est aussi dans l’application, derrière la porte de l’espace enfant («&nbsp;Comment marche Kamelo&nbsp;?&nbsp;»).</p>
+  </article>
+
+  <article data-lang="en" lang="en" id="en">
+    <h1>Kamelo and you</h1>
+    <p class="kids-hello">Hello! I’m Kamelo, a little chameleon. I change colour when you practise.</p>
+    <ol class="kids-list">
+      <li class="k-card k-french"><h2>What is Kamelo for?</h2><p>Kamelo is a game that helps you with your homework.</p><p>Your parents take a photo of your homework. A computer reads it. Then Kamelo gets exercises ready for you.</p></li>
+      <li class="k-card k-lesson"><h2>A grown-up checks everything</h2><p>Before you play, a grown-up looks at every exercise and says “that’s right”.</p></li>
+      <li class="k-card k-maths"><h2>The photo is deleted quickly</h2><p>The photo of your homework is deleted within one day.</p></li>
+      <li class="k-card k-poetry"><h2>Kamelo remembers, to help you</h2><p>Kamelo remembers the words you got right and the ones to practise again.</p><p>Your parents can see what you did. Nobody else sees your exercises.</p></li>
+      <li class="k-card k-language"><h2>What Kamelo doesn’t do</h2><p>Kamelo doesn’t chat with you: it shows you exercises and cheers you on.</p><p>There are no adverts and nothing to buy.</p></li>
+      <li class="k-card k-french"><h2>Made a mistake? That’s OK</h2><p>It’s an “almost”. The word will come back a bit later.</p></li>
+      <li class="k-card k-lesson"><h2>If something bothers you</h2><p>Tell a grown-up. In Kamelo, tap the door to call a grown-up.</p><p>You can ask your parents to delete your exercises whenever you like.</p></li>
+    </ol>
+    <p class="kids-parents">For parents: this notice sums up our <a href="privacy.html#en">privacy policy</a> for children. Please read it together. It is also in the app, behind the door in the child space (“How does Kamelo work?”).</p>
+  </article>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-block" data-lang="fr">
+      <nav aria-label="Liens utiles">
+        <ul class="footer-links">
+          <li><a href="privacy.html#fr">Confidentialité</a></li>
+          <li><a href="terms.html#fr">Conditions d’utilisation</a></li>
+          <li><a href="terms.html#fr-mentions-legales">Mentions légales</a></li>
+          <li><a href="support.html#fr">Aide et contact</a></li>
+          <li><a href="children.html#fr">Pour les enfants</a></li>
+          <li><a href="press.html#fr">Presse</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Ce site n’utilise aucun cookie ni aucun traceur. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+    <div class="footer-block" data-lang="en" lang="en">
+      <nav aria-label="Useful links">
+        <ul class="footer-links">
+          <li><a href="privacy.html#en">Privacy</a></li>
+          <li><a href="terms.html#en">Terms of use</a></li>
+          <li><a href="terms.html#en-legal-notice">Legal notice</a></li>
+          <li><a href="support.html#en">Help and contact</a></li>
+          <li><a href="children.html#en">For children</a></li>
+          <li><a href="press.html#en">Press</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">This website uses no cookies and no trackers. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

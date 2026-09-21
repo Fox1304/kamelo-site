@@ -1,0 +1,5 @@
+# Kamelo public site. No trackers, nothing to hide from search engines.
+# Crawlers only read robots.txt at the domain root: this file becomes effective once a custom domain points here.
+User-agent: *
+Allow: /
+Disallow: /tools/

@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="fr" data-title-fr="Kamelo · Photographie les devoirs, Kamelo en fait des exercices" data-title-en="Kamelo · Snap the homework, Kamelo turns it into practice">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'sha256-I9BgKOawifnJGNiBx4F5HJiavsiwz4P4nHcMTh/zUJw='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Kamelo · Photographie les devoirs, Kamelo en fait des exercices</title>
+<meta name="description" content="Kamelo transforme les devoirs du soir des enfants de 6 à 11 ans en dix minutes de jeu, sur exactement ce que l’enseignant a demandé. Sans publicité. Kamelo turns tonight’s homework into ten playful minutes.">
+<link rel="canonical" href="https://fox1304.github.io/kamelo-site/">
+<meta property="og:url" content="https://fox1304.github.io/kamelo-site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamelo">
+<meta property="og:title" content="Kamelo · Photographie les devoirs, Kamelo en fait des exercices">
+<meta property="og:description" content="Kamelo transforme les devoirs du soir des enfants de 6 à 11 ans en dix minutes de jeu, sur exactement ce que l’enseignant a demandé. Sans publicité. Kamelo turns tonight’s homework into ten playful minutes.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF8EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>(function () {
+  var root = document.documentElement, loc = window.location;
+  function langOf(h) {
+    h = (h || "").replace(/^#/, "").toLowerCase();
+    if (h === "en" || h.slice(0, 3) === "en-") return "en";
+    if (h === "fr" || h.slice(0, 3) === "fr-") return "fr";
+    return null;
+  }
+  function browserLang() {
+    var list = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase().slice(0, 2);
+      if (l === "fr" || l === "en") return l;
+    }
+    return "fr";
+  }
+  function apply(lang) {
+    root.setAttribute("data-show", lang);
+    root.setAttribute("lang", lang);
+    var t = root.getAttribute("data-title-" + lang);
+    if (t) document.title = t;
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) {
+      if (sw[i].getAttribute("data-set-lang") === lang) sw[i].setAttribute("aria-current", "true");
+      else sw[i].removeAttribute("aria-current");
+    }
+  }
+  var h = loc.hash.slice(1).toLowerCase();
+  if ((h === "fr" || h === "en") && window.history.replaceState) window.history.replaceState(null, "", loc.pathname + loc.search);
+  apply(langOf(h) || browserLang());
+  window.addEventListener("hashchange", function () { var l = langOf(loc.hash); if (l) apply(l); });
+  document.addEventListener("DOMContentLoaded", function () {
+    apply(root.getAttribute("data-show"));
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) sw[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      apply(this.getAttribute("data-set-lang"));
+    });
+    var art = document.querySelector("[data-kamelo]");
+    var skins = document.querySelectorAll("[data-skin]");
+    for (var j = 0; j < skins.length; j++) skins[j].addEventListener("click", function () {
+      if (art) {
+        art.style.setProperty("--k-skin", this.getAttribute("data-skin"));
+        art.style.setProperty("--k-deep", this.getAttribute("data-deep"));
+        art.style.setProperty("--k-light", this.getAttribute("data-light"));
+      }
+      for (var k = 0; k < skins.length; k++) skins[k].setAttribute("aria-pressed", skins[k] === this ? "true" : "false");
+    });
+  });
+})();</script>
+</head>
+<body class="page-home">
+<a class="skip" href="#main"><span data-lang="fr">Aller au contenu</span><span data-lang="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="40" height="40"><span>Kamelo</span></a>
+    <nav class="nav" aria-label="Menu">
+      <ul>
+        <li data-lang="fr"><a href="index.html#fr-comment-ca-marche">Comment ça marche</a></li>
+        <li data-lang="fr"><a href="privacy.html#fr">Confidentialité</a></li>
+        <li data-lang="fr"><a href="support.html#fr">Aide</a></li>
+        <li data-lang="en" lang="en"><a href="index.html#en-how-it-works">How it works</a></li>
+        <li data-lang="en" lang="en"><a href="privacy.html#en">Privacy</a></li>
+        <li data-lang="en" lang="en"><a href="support.html#en">Help</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <a href="#fr" hreflang="fr" lang="fr" data-set-lang="fr" aria-label="Français">FR</a>
+      <a href="#en" hreflang="en" lang="en" data-set-lang="en" aria-label="English">EN</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div data-lang="fr">
+        <p class="eyebrow">Pour les parents d’enfants de 6 à 11 ans</p>
+        <h1>Photographie les devoirs, Kamelo en fait des exercices</h1>
+        <p class="lead">Les devoirs du soir, sans dispute. Vous photographiez la consigne du cahier de textes ou la leçon&#8239;; Kamelo la transforme en dix minutes de jeu, sur exactement ce que l’enseignant a demandé.</p>
+        <div class="store-row">
+          <a class="store" href="#fr-disponibilite"><span class="store-small">Bientôt sur</span> <span class="store-big">l’App Store</span></a>
+          <a class="store" href="#fr-disponibilite"><span class="store-small">Bientôt sur</span> <span class="store-big">Google Play</span></a>
+        </div>
+        <ul class="ticks">
+          <li>Gratuit pour commencer</li>
+          <li>Sans publicité</li>
+          <li>Sans compte obligatoire</li>
+        </ul>
+      </div>
+      <div data-lang="en" lang="en">
+        <p class="eyebrow">For parents of 6 to 11-year-olds</p>
+        <h1>Snap the homework, Kamelo turns it into practice</h1>
+        <p class="lead">Tonight’s homework, without the fight. You photograph the homework instruction or the lesson; Kamelo turns it into ten playful minutes on exactly what the teacher set.</p>
+        <div class="store-row">
+          <a class="store" href="#en-availability"><span class="store-small">Coming soon to</span> <span class="store-big">the App Store</span></a>
+          <a class="store" href="#en-availability"><span class="store-small">Coming soon to</span> <span class="store-big">Google Play</span></a>
+        </div>
+        <ul class="ticks">
+          <li>Free to start</li>
+          <li>No advertising</li>
+          <li>No account needed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="kamelo" data-kamelo viewBox="24 40 306 324" width="300" height="318" aria-hidden="true" focusable="false">
+        <g class="k-body">
+          <path d="M122 272C121.6 263.8 118.1 227.2 119.4 222.6C120.6 218.1 128.1 237.3 129.4 244.8C130.8 252.3 129.8 260.9 127.5 267.7C125.2 274.5 120.4 281.2 115.4 285.7C110.4 290.2 103.4 293.4 97.3 294.8C91.1 296.2 84 295.7 78.3 294C72.6 292.3 67.1 288.6 63.3 284.6C59.5 280.7 56.8 275.2 55.5 270.3C54.3 265.4 54.6 259.8 55.8 255.3C57.1 250.9 59.9 246.6 62.9 243.6C65.8 240.7 70 238.6 73.6 237.6C77.3 236.7 81.4 237 84.6 237.9C87.8 238.8 90.9 240.9 92.9 243C94.9 245.1 96.1 248.1 96.7 250.5C97.2 252.9 96.1 256.4 96 257.6" fill="none" stroke="#1E2140" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="k-skin-stroke" d="M122 272C121.6 263.8 118.1 227.2 119.4 222.6C120.6 218.1 128.1 237.3 129.4 244.8C130.8 252.3 129.8 260.9 127.5 267.7C125.2 274.5 120.4 281.2 115.4 285.7C110.4 290.2 103.4 293.4 97.3 294.8C91.1 296.2 84 295.7 78.3 294C72.6 292.3 67.1 288.6 63.3 284.6C59.5 280.7 56.8 275.2 55.5 270.3C54.3 265.4 54.6 259.8 55.8 255.3C57.1 250.9 59.9 246.6 62.9 243.6C65.8 240.7 70 238.6 73.6 237.6C77.3 236.7 81.4 237 84.6 237.9C87.8 238.8 90.9 240.9 92.9 243C94.9 245.1 96.1 248.1 96.7 250.5C97.2 252.9 96.1 256.4 96 257.6" fill="none" stroke="#2FC4B2" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect class="k-deep" x="107" y="295" width="26" height="38" rx="13" fill="#1F8C80" stroke="#1E2140" stroke-width="6"/>
+          <circle class="k-deep" cx="116" cy="334" r="7.5" fill="#1F8C80" stroke="#1E2140" stroke-width="6"/>
+          <rect class="k-skin" x="146" y="295" width="28" height="46" rx="14" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <circle class="k-skin" cx="167" cy="341" r="8" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <circle class="k-skin" cx="153" cy="341" r="8" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <ellipse class="k-skin" cx="195" cy="258" rx="88" ry="62" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <ellipse class="k-light" cx="214" cy="276" rx="50" ry="29" fill="#8FE6DA"/>
+          <circle class="k-light" cx="164" cy="218" r="8" fill="#8FE6DA"/>
+          <circle class="k-light" cx="124" cy="264" r="9" fill="#8FE6DA"/>
+          <circle class="k-light" cx="146" cy="238" r="13" fill="#8FE6DA"/>
+          <rect class="k-skin" x="224" y="295" width="28" height="46" rx="14" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <circle class="k-skin" cx="245" cy="341" r="8" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <circle class="k-skin" cx="231" cy="341" r="8" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+        </g>
+        <g class="k-head">
+          <circle class="k-skin" cx="160" cy="86" r="12" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <circle class="k-skin" cx="190" cy="76" r="14" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <circle class="k-skin" cx="222" cy="72" r="16" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <ellipse class="k-skin" cx="218" cy="150" rx="98" ry="75" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <ellipse cx="306" cy="148" rx="2.5" ry="2" fill="#1E2140"/>
+          <circle class="k-skin" cx="189" cy="127" r="34" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <clipPath id="k-eye-b"><circle cx="190" cy="126" r="28"/></clipPath>
+          <circle cx="190" cy="126" r="28" fill="#FFFFFF"/>
+          <g clip-path="url(#k-eye-b)">
+            <g class="k-gaze"><circle class="k-deep" cx="198" cy="121" r="15" fill="#1F8C80"/><circle cx="198" cy="121" r="10.2" fill="#1E2140"/></g>
+            <rect class="k-skin k-lid" x="158" y="96" width="64" height="9" fill="#2FC4B2"/>
+          </g>
+          <circle cx="198.75" cy="115.75" r="4.95" fill="#FFFFFF"/>
+          <circle cx="187.5" cy="130" r="2.55" fill="#FFFFFF"/>
+          <ellipse cx="192" cy="170" rx="11" ry="6.5" fill="#FF7A9A" opacity="0.65"/>
+          <ellipse cx="286" cy="178" rx="14" ry="8" fill="#FF7A9A" opacity="0.65"/>
+          <circle class="k-skin" cx="253" cy="135" r="40" fill="#2FC4B2" stroke="#1E2140" stroke-width="6"/>
+          <clipPath id="k-eye-f"><circle cx="254" cy="134" r="34"/></clipPath>
+          <circle cx="254" cy="134" r="34" fill="#FFFFFF"/>
+          <g clip-path="url(#k-eye-f)">
+            <g class="k-gaze"><circle class="k-deep" cx="262" cy="129" r="18" fill="#1F8C80"/><circle cx="262" cy="129" r="12.24" fill="#1E2140"/></g>
+            <rect class="k-skin k-lid" x="216" y="98" width="76" height="10" fill="#2FC4B2"/>
+          </g>
+          <circle cx="264.1" cy="122.1" r="5.94" fill="#FFFFFF"/>
+          <circle cx="250.6" cy="139.2" r="3.06" fill="#FFFFFF"/>
+          <path d="M229 191Q246 209 263 191" fill="none" stroke="#1E2140" stroke-width="6" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <div class="skins" role="group" aria-labelledby="skins-label">
+        <p id="skins-label" class="skins-label"><span data-lang="fr">Kamelo change de couleur selon la matière&#8239;:</span><span data-lang="en" lang="en">Kamelo changes colour with the subject:</span></p>
+        <button type="button" class="skin skin-kamelo" data-skin="#2FC4B2" data-deep="#1F8C80" data-light="#8FE6DA" aria-pressed="true"><span class="dot" aria-hidden="true"></span>Kamelo</button>
+        <button type="button" class="skin skin-french" data-skin="#4F8BFF" data-deep="#2A5BC4" data-light="#B9D0FF" aria-pressed="false"><span class="dot" aria-hidden="true"></span><span data-lang="fr">Français</span><span data-lang="en" lang="en">Spelling</span></button>
+        <button type="button" class="skin skin-maths" data-skin="#FFC53D" data-deep="#C8900E" data-light="#FFE7A6" aria-pressed="false"><span class="dot" aria-hidden="true"></span><span data-lang="fr">Maths</span><span data-lang="en" lang="en">Maths</span></button>
+        <button type="button" class="skin skin-lesson" data-skin="#3EC77A" data-deep="#238A50" data-light="#A9EBC6" aria-pressed="false"><span class="dot" aria-hidden="true"></span><span data-lang="fr">Leçons</span><span data-lang="en" lang="en">Lessons</span></button>
+        <button type="button" class="skin skin-poetry" data-skin="#9B6BFF" data-deep="#6B44C9" data-light="#D3C1FF" aria-pressed="false"><span class="dot" aria-hidden="true"></span><span data-lang="fr">Poésie</span><span data-lang="en" lang="en">Poems</span></button>
+        <button type="button" class="skin skin-language" data-skin="#FF8A3D" data-deep="#C45A14" data-light="#FFC8A1" aria-pressed="false"><span class="dot" aria-hidden="true"></span><span data-lang="fr">Langues</span><span data-lang="en" lang="en">Languages</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-lang="fr" lang="fr" id="fr">
+  <section class="band" aria-labelledby="fr-comment-ca-marche">
+    <div class="wrap">
+      <h2 id="fr-comment-ca-marche" class="section-title">Comment ça marche&#8239;?</h2>
+      <ol class="steps">
+        <li class="card step">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+          <h3>Photographiez la consigne</h3>
+          <p>Le cahier de textes, la liste de mots ou la leçon, imprimés ou manuscrits. Avant l’envoi, votre téléphone masque le nom de votre enfant.</p>
+        </li>
+        <li class="card step">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+          <h3>Vérifiez en quelques secondes</h3>
+          <p>Kamelo reconnaît l’exercice (dictée, tables, leçon, poésie…). Vous corrigez si besoin, puis vous confirmez&#8239;: votre enfant ne voit que ce que vous avez validé.</p>
+        </li>
+        <li class="card step">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.2 1 5.8L12 16.4 6.8 19.2l1-5.8L3.5 9.2l5.9-.9z"/></svg></span>
+          <h3>Votre enfant s’entraîne</h3>
+          <p>Dix minutes avec Kamelo, qui change de couleur au fil des réussites. Pas de chrono par défaut, pas de rouge&#8239;: une erreur, c’est un «&nbsp;presque&nbsp;», et le mot revient plus tard.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band-alt" aria-labelledby="fr-exercices">
+    <div class="wrap">
+      <h2 id="fr-exercices" class="section-title">Dix types d’exercices, du CP au CM2</h2>
+      <ul class="types">
+        <li class="t-french">Dictée et listes de mots</li>
+        <li class="t-french">Mots invariables</li>
+        <li class="t-french">Conjugaison</li>
+        <li class="t-maths">Tables de multiplication</li>
+        <li class="t-maths">Additions et soustractions</li>
+        <li class="t-maths">Calcul mental</li>
+        <li class="t-maths">Nombres en lettres</li>
+        <li class="t-lesson">Leçons, avec un quiz relu par vous</li>
+        <li class="t-poetry">Poésie à apprendre</li>
+        <li class="t-language">Vocabulaire d’anglais</li>
+      </ul>
+      <p class="note">Programmes de France, d’Angleterre et des États-Unis. Un devoir que Kamelo ne sait pas encore faire&#8239;? Il devient une tâche à cocher, et vous pouvez nous demander de l’ajouter.</p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="fr-entrainement">
+    <div class="wrap split">
+      <div>
+        <h2 id="fr-entrainement" class="section-title">L’entraînement, pas les réponses</h2>
+        <p>Kamelo ne fait pas les devoirs à la place de votre enfant. Il l’aide à s’entraîner sur ce que l’enseignant a demandé, avec des voix, des sons, des encouragements et un petit caméléon qui se réjouit de chaque progrès.</p>
+        <p>Et vous, vous voyez que c’est fait&#8239;: les exercices terminés, les mots à revoir, le temps passé.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>10 minutes</strong> environ par séance</li>
+        <li><strong>0 publicité</strong> et aucun traceur</li>
+        <li><strong>Vous</strong> relisez chaque exercice avant votre enfant</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-alt" aria-labelledby="fr-vie-privee">
+    <div class="wrap">
+      <h2 id="fr-vie-privee" class="section-title">Pensé pour les enfants, piloté par les parents</h2>
+      <ul class="promises">
+        <li class="card"><h3>Photo supprimée sous 24&nbsp;heures</h3><p>La photo sert uniquement à lire le devoir, puis elle est effacée de nos serveurs.</p></li>
+        <li class="card"><h3>Nom masqué avant l’envoi</h3><p>Votre téléphone cache le nom, la classe et la date en haut de la feuille avant tout envoi.</p></li>
+        <li class="card"><h3>Ni publicité, ni traceur</h3><p>Aucun outil d’analyse dans l’espace enfant, aucune donnée revendue, aucun identifiant publicitaire.</p></li>
+        <li class="card"><h3>Pas de discussion avec l’IA</h3><p>Kamelo est un personnage dont toutes les phrases sont écrites à l’avance. Votre enfant ne parle jamais à une IA.</p></li>
+        <li class="card"><h3>Vous gardez la main</h3><p>Achats, réglages et liens sont protégés par votre code parent. Compte facultatif, export et suppression en un geste.</p></li>
+        <li class="card"><h3>Hébergé à Paris</h3><p>Vos données restent dans l’Union européenne. La lecture des photos est confiée à Anthropic (Claude), aux États-Unis, avec les garanties européennes.</p></li>
+      </ul>
+      <p class="more"><a href="privacy.html#fr">Lire la politique de confidentialité</a> · <a href="children.html#fr">La notice pour les enfants</a></p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="fr-tarifs">
+    <div class="wrap">
+      <h2 id="fr-tarifs" class="section-title">Tarifs</h2>
+      <div class="plans">
+        <div class="card plan">
+          <h3>Gratuit</h3>
+          <ul>
+            <li>3 scans de devoirs par semaine</li>
+            <li>1 enfant</li>
+            <li>Exercices déjà créés illimités</li>
+            <li>Saisie manuelle des devoirs</li>
+          </ul>
+        </div>
+        <div class="card plan plan-premium">
+          <h3>Kamelo Premium</h3>
+          <ul>
+            <li>Scans illimités</li>
+            <li>Jusqu’à 3 enfants</li>
+            <li>Suivi des progrès</li>
+            <li>Annuel avec 7 jours d’essai gratuit, ou mensuel</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Prix affichés dans l’application avant l’achat. Abonnement à renouvellement automatique, résiliable à tout moment depuis votre compte App Store ou Google Play.</p>
+    </div>
+  </section>
+
+  <section class="band band-alt" aria-labelledby="fr-disponibilite">
+    <div class="wrap narrow center">
+      <h2 id="fr-disponibilite" class="section-title">Bientôt disponible</h2>
+      <p>Kamelo est en test auprès de quelques familles. Il arrive bientôt sur iPhone, iPad et Android, d’abord en France, puis au Royaume-Uni et aux États-Unis.</p>
+      <p><a class="btn" href="mailto:thomas.sobstyl@me.com">Nous écrire</a></p>
+    </div>
+  </section>
+</div>
+
+<div data-lang="en" lang="en" id="en">
+  <section class="band" aria-labelledby="en-how-it-works">
+    <div class="wrap">
+      <h2 id="en-how-it-works" class="section-title">How it works</h2>
+      <ol class="steps">
+        <li class="card step">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+          <h3>Photograph the instruction</h3>
+          <p>The homework diary, the spelling list or the lesson, printed or handwritten. Before sending, your phone masks your child’s name.</p>
+        </li>
+        <li class="card step">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+          <h3>Check it in seconds</h3>
+          <p>Kamelo recognises the exercise (spellings, times tables, lesson, poem…). You fix anything if needed, then confirm: your child only sees what you approved.</p>
+        </li>
+        <li class="card step">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.2 1 5.8L12 16.4 6.8 19.2l1-5.8L3.5 9.2l5.9-.9z"/></svg></span>
+          <h3>Your child practises</h3>
+          <p>Ten minutes with Kamelo, who changes colour as your child succeeds. No timer by default, no red: a mistake is an “almost”, and the word comes back later.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band-alt" aria-labelledby="en-exercises">
+    <div class="wrap">
+      <h2 id="en-exercises" class="section-title">Ten kinds of practice, for ages 6 to 11</h2>
+      <ul class="types">
+        <li class="t-french">Spelling lists</li>
+        <li class="t-french">Sight words and common exception words</li>
+        <li class="t-french">Verb conjugation (French)</li>
+        <li class="t-maths">Times tables</li>
+        <li class="t-maths">Addition and subtraction facts</li>
+        <li class="t-maths">Mental arithmetic</li>
+        <li class="t-maths">Numbers in words</li>
+        <li class="t-lesson">Lessons, with a quiz you review</li>
+        <li class="t-poetry">Poems to learn by heart</li>
+        <li class="t-language">Vocabulary (French and English)</li>
+      </ul>
+      <p class="note">Curricula for England, the United States and France. Homework Kamelo cannot do yet? It becomes a checklist task, and you can ask us to add it.</p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="en-practice">
+    <div class="wrap split">
+      <div>
+        <h2 id="en-practice" class="section-title">Practice, not answers</h2>
+        <p>Kamelo does not do your child’s homework. It helps them practise exactly what the teacher set, with voices, sounds, encouragement and a little chameleon who celebrates every step.</p>
+        <p>And you can see it is done: finished exercises, words to review, time spent.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>About 10 minutes</strong> per session</li>
+        <li><strong>0 ads</strong> and no tracking</li>
+        <li><strong>You</strong> review every exercise before your child sees it</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-alt" aria-labelledby="en-privacy">
+    <div class="wrap">
+      <h2 id="en-privacy" class="section-title">Built for children, run by parents</h2>
+      <ul class="promises">
+        <li class="card"><h3>Photo deleted within 24 hours</h3><p>The photo is only used to read the homework, then it is erased from our servers.</p></li>
+        <li class="card"><h3>Name masked before sending</h3><p>Your phone hides the name, class and date at the top of the page before anything is sent.</p></li>
+        <li class="card"><h3>No ads, no tracking</h3><p>No analytics in the child space, no data sold, no advertising identifier.</p></li>
+        <li class="card"><h3>No chatting with AI</h3><p>Kamelo is a character whose lines are all written in advance. Your child never talks to an AI.</p></li>
+        <li class="card"><h3>You stay in charge</h3><p>Purchases, settings and links are protected by your parent code. Account optional, export and deletion in one tap.</p></li>
+        <li class="card"><h3>Hosted in Paris</h3><p>Your data stays in the European Union. Photo reading is done by Anthropic (Claude) in the United States, under EU safeguards.</p></li>
+      </ul>
+      <p class="more"><a href="privacy.html#en">Read the privacy policy</a> · <a href="children.html#en">The notice for children</a></p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="en-pricing">
+    <div class="wrap">
+      <h2 id="en-pricing" class="section-title">Pricing</h2>
+      <div class="plans">
+        <div class="card plan">
+          <h3>Free</h3>
+          <ul>
+            <li>3 homework scans a week</li>
+            <li>1 child</li>
+            <li>Unlimited replay of exercises already created</li>
+            <li>Manual homework entry</li>
+          </ul>
+        </div>
+        <div class="card plan plan-premium">
+          <h3>Kamelo Premium</h3>
+          <ul>
+            <li>Unlimited scans</li>
+            <li>Up to 3 children</li>
+            <li>Progress tracking</li>
+            <li>Annual with a 7-day free trial, or monthly</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Prices are shown in the app before purchase. Auto-renewing subscription, cancel any time in your App Store or Google Play account.</p>
+    </div>
+  </section>
+
+  <section class="band band-alt" aria-labelledby="en-availability">
+    <div class="wrap narrow center">
+      <h2 id="en-availability" class="section-title">Coming soon</h2>
+      <p>Kamelo is being tested with a few families. It is coming soon to iPhone, iPad and Android, first in France, then in the United Kingdom and the United States.</p>
+      <p><a class="btn" href="mailto:thomas.sobstyl@me.com">Write to us</a></p>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-block" data-lang="fr">
+      <nav aria-label="Liens utiles">
+        <ul class="footer-links">
+          <li><a href="privacy.html#fr">Confidentialité</a></li>
+          <li><a href="terms.html#fr">Conditions d’utilisation</a></li>
+          <li><a href="terms.html#fr-mentions-legales">Mentions légales</a></li>
+          <li><a href="support.html#fr">Aide et contact</a></li>
+          <li><a href="children.html#fr">Pour les enfants</a></li>
+          <li><a href="press.html#fr">Presse</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Ce site n’utilise aucun cookie ni aucun traceur. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+    <div class="footer-block" data-lang="en" lang="en">
+      <nav aria-label="Useful links">
+        <ul class="footer-links">
+          <li><a href="privacy.html#en">Privacy</a></li>
+          <li><a href="terms.html#en">Terms of use</a></li>
+          <li><a href="terms.html#en-legal-notice">Legal notice</a></li>
+          <li><a href="support.html#en">Help and contact</a></li>
+          <li><a href="children.html#en">For children</a></li>
+          <li><a href="press.html#en">Press</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">This website uses no cookies and no trackers. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

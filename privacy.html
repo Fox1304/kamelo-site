@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="fr" data-title-fr="Politique de confidentialité · Kamelo" data-title-en="Privacy policy · Kamelo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'sha256-I9BgKOawifnJGNiBx4F5HJiavsiwz4P4nHcMTh/zUJw='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Politique de confidentialité · Kamelo</title>
+<meta name="description" content="Politique de confidentialité de Kamelo : données traitées, IA, enfants, durées de conservation, droits. Kamelo privacy policy in English.">
+<link rel="canonical" href="https://fox1304.github.io/kamelo-site/privacy.html">
+<meta property="og:url" content="https://fox1304.github.io/kamelo-site/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamelo">
+<meta property="og:title" content="Politique de confidentialité · Kamelo">
+<meta property="og:description" content="Politique de confidentialité de Kamelo : données traitées, IA, enfants, durées de conservation, droits. Kamelo privacy policy in English.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF8EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>(function () {
+  var root = document.documentElement, loc = window.location;
+  function langOf(h) {
+    h = (h || "").replace(/^#/, "").toLowerCase();
+    if (h === "en" || h.slice(0, 3) === "en-") return "en";
+    if (h === "fr" || h.slice(0, 3) === "fr-") return "fr";
+    return null;
+  }
+  function browserLang() {
+    var list = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase().slice(0, 2);
+      if (l === "fr" || l === "en") return l;
+    }
+    return "fr";
+  }
+  function apply(lang) {
+    root.setAttribute("data-show", lang);
+    root.setAttribute("lang", lang);
+    var t = root.getAttribute("data-title-" + lang);
+    if (t) document.title = t;
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) {
+      if (sw[i].getAttribute("data-set-lang") === lang) sw[i].setAttribute("aria-current", "true");
+      else sw[i].removeAttribute("aria-current");
+    }
+  }
+  var h = loc.hash.slice(1).toLowerCase();
+  if ((h === "fr" || h === "en") && window.history.replaceState) window.history.replaceState(null, "", loc.pathname + loc.search);
+  apply(langOf(h) || browserLang());
+  window.addEventListener("hashchange", function () { var l = langOf(loc.hash); if (l) apply(l); });
+  document.addEventListener("DOMContentLoaded", function () {
+    apply(root.getAttribute("data-show"));
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) sw[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      apply(this.getAttribute("data-set-lang"));
+    });
+    var art = document.querySelector("[data-kamelo]");
+    var skins = document.querySelectorAll("[data-skin]");
+    for (var j = 0; j < skins.length; j++) skins[j].addEventListener("click", function () {
+      if (art) {
+        art.style.setProperty("--k-skin", this.getAttribute("data-skin"));
+        art.style.setProperty("--k-deep", this.getAttribute("data-deep"));
+        art.style.setProperty("--k-light", this.getAttribute("data-light"));
+      }
+      for (var k = 0; k < skins.length; k++) skins[k].setAttribute("aria-pressed", skins[k] === this ? "true" : "false");
+    });
+  });
+})();</script>
+</head>
+<body class="page-privacy">
+<a class="skip" href="#main"><span data-lang="fr">Aller au contenu</span><span data-lang="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="40" height="40"><span>Kamelo</span></a>
+    <nav class="nav" aria-label="Menu">
+      <ul>
+        <li data-lang="fr"><a href="index.html#fr-comment-ca-marche">Comment ça marche</a></li>
+        <li data-lang="fr"><a href="privacy.html#fr" aria-current="page">Confidentialité</a></li>
+        <li data-lang="fr"><a href="support.html#fr">Aide</a></li>
+        <li data-lang="en" lang="en"><a href="index.html#en-how-it-works">How it works</a></li>
+        <li data-lang="en" lang="en"><a href="privacy.html#en" aria-current="page">Privacy</a></li>
+        <li data-lang="en" lang="en"><a href="support.html#en">Help</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <a href="#fr" hreflang="fr" lang="fr" data-set-lang="fr" aria-label="Français">FR</a>
+      <a href="#en" hreflang="en" lang="en" data-set-lang="en" aria-label="English">EN</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap narrow legal">
+<article class="doc" data-lang="fr" lang="fr" id="fr">
+  <header class="doc-head">
+    <p class="eyebrow">Kamelo</p>
+    <h1 id="fr-top">Politique de confidentialité</h1>
+    <p class="doc-meta"><em>Version 1.0 — 21 septembre 2026</em></p>
+  </header>
+<p>Kamelo aide votre enfant à s’entraîner sur ses devoirs du soir : vous photographiez la consigne ou la leçon, une intelligence artificielle la lit, vous vérifiez, puis votre enfant s’entraîne avec Kamelo, le caméléon qui change de couleur. Cette politique explique quelles données nous traitons, pourquoi, avec qui, combien de temps, et comment exercer vos droits. Elle s’applique à l’application Kamelo (iPhone, iPad et Android) et au site fox1304.github.io/kamelo-site.</p>
+<aside class="callout">
+<p><strong>En bref</strong></p>
+<ul>
+  <li>La photo du devoir est recadrée sur votre téléphone, le nom de votre enfant y est masqué, puis elle est lue par l’IA Claude d’Anthropic (États-Unis) et supprimée de nos serveurs sous 24 heures.</li>
+  <li>Nous ne demandons jamais le nom de famille, l’école, l’adresse ni la date de naissance de votre enfant.</li>
+  <li>Aucune publicité, aucun traceur, aucune revente de données. L’espace enfant ne contient ni outil d’analyse, ni achat, ni lien externe accessible sans votre code parent.</li>
+  <li>Nos serveurs sont situés dans l’Union européenne (Paris). Vous pouvez exporter vos données ou tout supprimer depuis l’application, à tout moment.</li>
+</ul>
+</aside>
+<nav class="toc" aria-labelledby="toc-fr">
+  <h2 id="toc-fr" class="toc-title">Sommaire</h2>
+  <ol>
+    <li><a href="#fr-qui-sommes-nous">1. Qui sommes-nous ?</a></li>
+    <li><a href="#fr-quelles-donnees-traitons-nous">2. Quelles données traitons-nous ?</a></li>
+    <li><a href="#fr-pourquoi-et-sur-quelle-base-legale">3. Pourquoi et sur quelle base légale ?</a></li>
+    <li><a href="#fr-qui-traite-vos-donnees-pour-nous">4. Qui traite vos données pour nous ?</a></li>
+    <li><a href="#fr-enfants">5. Enfants</a></li>
+    <li><a href="#fr-combien-de-temps-gardons-nous-les-donnees">6. Combien de temps gardons-nous les données ?</a></li>
+    <li><a href="#fr-vos-droits">7. Vos droits</a></li>
+    <li><a href="#fr-securite">8. Sécurité</a></li>
+    <li><a href="#fr-transferts-hors-de-l-union-europeenne">9. Transferts hors de l’Union européenne</a></li>
+    <li><a href="#fr-modifications">10. Modifications</a></li>
+    <li><a href="#fr-version-pour-les-enfants">11. Version pour les enfants</a></li>
+  </ol>
+</nav>
+<section aria-labelledby="fr-qui-sommes-nous">
+<h2 id="fr-qui-sommes-nous">1. Qui sommes-nous ?</h2>
+<p>Kamelo est édité par Thomas Sobstyl, développeur indépendant établi en France. Il est le responsable du traitement de vos données personnelles.</p>
+<ul>
+  <li>Contact pour vos données, le support et l’exercice de vos droits : <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a>. Nous répondons personnellement, en français ou en anglais.</li>
+  <li>Adresse postale et téléphone (notifications légales) : <mark class="todo">[FOUNDER TO CONFIRM]</mark></li>
+  <li>Délégué à la protection des données : aucun n’est désigné à ce jour <mark class="todo">[FOUNDER TO CONFIRM]</mark> ; écrivez-nous à l’adresse ci-dessus.</li>
+  <li>Représentant au Royaume-Uni (article 27 du RGPD britannique) : <mark class="todo">[FOUNDER TO CONFIRM]</mark></li>
+</ul>
+</section>
+<section aria-labelledby="fr-quelles-donnees-traitons-nous">
+<h2 id="fr-quelles-donnees-traitons-nous">2. Quelles données traitons-nous ?</h2>
+<p>Nous collectons le minimum nécessaire. Vous pouvez utiliser Kamelo sans créer de compte.</p>
+<h3 id="fr-vous-le-parent">2.1 Vous, le parent</h3>
+<ul>
+  <li><strong>Sans compte (par défaut)</strong> : un identifiant technique aléatoire, créé par l’application au premier lancement, pour enregistrer et synchroniser les données de votre famille. Ce n’est ni l’identifiant publicitaire ni un identifiant matériel de votre appareil.</li>
+  <li><strong>Si vous vous connectez</strong> (pour sauvegarder, retrouver vos données sur un autre appareil ou les partager avec l’autre parent) : votre adresse e-mail, ou l’identifiant transmis par « Se connecter avec Apple » (qui peut être une adresse relais masquée), et les dates de connexion.</li>
+  <li><strong>Réglages de la famille</strong> : pays, langue, fuseau horaire, formule (gratuite ou Premium). L’heure du rappel quotidien reste sur votre appareil.</li>
+  <li><strong>Consentements</strong> : ce que vous avez accepté ou retiré, la version du texte et la date.</li>
+  <li><strong>Abonnement</strong> : statut, formule et dates de renouvellement ou d’expiration, transmis par Apple ou Google via notre prestataire RevenueCat. Nous ne voyons jamais vos coordonnées bancaires.</li>
+  <li><strong>Échanges avec nous</strong> : vos e-mails, vos signalements de contenu (« Signaler un problème ») et vos demandes de nouveau type d’exercice, ainsi que nos réponses.</li>
+  <li><strong>Code parent</strong> : il reste sur votre appareil, sous forme d’empreinte (hachage salé), et ne nous est jamais transmis.</li>
+</ul>
+<h3 id="fr-votre-enfant">2.2 Votre enfant</h3>
+<ul>
+  <li><strong>Profil</strong> : un prénom ou un surnom que vous choisissez, la classe, le programme scolaire (France, Royaume-Uni ou États-Unis), la couleur préférée, le mode de dictée et la voix préférée. Pas de nom de famille, de date de naissance, d’école ni de photo de l’enfant.</li>
+  <li><strong>Exercices</strong> : les exercices que vous avez confirmés (listes de mots, tables, questions de leçon, poèmes…), leur date et leur statut.</li>
+  <li><strong>Entraînement</strong> : les réponses et résultats des séances (réussi du premier coup, « presque », mots à revoir), leur durée, les gouttes de couleur, autocollants et jours d’entraînement.</li>
+  <li>Aucune donnée de localisation, aucun enregistrement de la voix, aucune analyse du visage ou des émotions.</li>
+</ul>
+<h3 id="fr-les-photos-des-devoirs">2.3 Les photos des devoirs</h3>
+<ul>
+  <li>Vous prenez ou importez la photo dans l’espace parent. Avant l’envoi, votre appareil la recadre sur la feuille, la réduit (1 568 pixels au plus), retire ses métadonnées (dont la localisation) et masque les lignes du haut de page qui ressemblent à un nom, une classe ou une date.</li>
+  <li>Le texte lu par votre appareil (reconnaissance de caractères) peut accompagner la photo comme indice, sans les lignes masquées. L’IA reçoit aussi la classe, le programme et la langue, jamais le prénom de votre enfant ni vos identifiants. Elle a pour consigne de ne jamais recopier un nom de personne ou d’école.</li>
+  <li>La photo est conservée au plus 24 heures sur nos serveurs, le temps de l’analyse, puis supprimée automatiquement. Seul l’exercice que vous confirmez reste dans votre compte, avec des informations techniques sur l’analyse (modèle utilisé, durée, coût, niveau de confiance), sans image.</li>
+  <li>Si vous demandez à Kamelo d’apprendre un nouveau type d’exercice, et seulement avec votre accord explicite pour cette demande, la photo est conservée 30 jours pour être étudiée, puis supprimée.</li>
+  <li>Conseil : cadrez uniquement la consigne ou la leçon ; évitez de photographier des visages ou des documents personnels.</li>
+</ul>
+<h3 id="fr-sur-votre-appareil">2.4 Sur votre appareil</h3>
+<ul>
+  <li>Kamelo fonctionne d’abord sur votre appareil : les données de votre famille y sont enregistrées, puis synchronisées avec nos serveurs dès que possible. Sur iPhone et iPad, elles peuvent figurer dans les sauvegardes de votre appareil (iCloud ou ordinateur), régies par les conditions d’Apple ; sur Android, Kamelo désactive la sauvegarde automatique de ses données.</li>
+  <li>Les voix de synthèse de votre appareil fonctionnent sans connexion : aucun texte n’est alors envoyé.</li>
+  <li>Sur Android, le scanner de documents et la reconnaissance de texte de Google (ML Kit, fournis par les services Google Play) fonctionnent sur l’appareil : la photo n’est pas envoyée à Google. Google peut recevoir des données techniques de diagnostic sur ces outils (modèle et version de l’appareil et de l’application, performances, codes d’erreur, identifiant d’installation).</li>
+</ul>
+<h3 id="fr-sur-ce-site">2.5 Sur ce site</h3>
+<p>Ce site n’utilise ni cookie, ni mesure d’audience, ni police ou script externe, et n’enregistre rien sur votre appareil. Il est hébergé par GitHub (GitHub Pages), qui enregistre l’adresse IP des visiteurs pour des raisons de sécurité, selon sa propre politique de confidentialité.</p>
+<h3 id="fr-ce-que-nous-ne-faisons-pas">2.6 Ce que nous ne faisons pas</h3>
+<ul>
+  <li>Pas de publicité, pas de traceur, pas d’identifiant publicitaire : l’application ne le demande pas.</li>
+  <li>Pas de mesure d’audience ni d’outil de rapport de plantage dans la version actuelle. Si nous en ajoutons un jour dans l’espace parent, ce sera après mise à jour de cette politique, et jamais dans l’espace enfant.</li>
+  <li>Pas de vente, de location ni de partage de données à des fins commerciales ou publicitaires.</li>
+  <li>Pas d’entraînement de modèles d’IA avec vos données ou celles de votre enfant.</li>
+  <li>Pas de discussion libre entre votre enfant et une IA : toutes les phrases de Kamelo sont écrites à l’avance.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-pourquoi-et-sur-quelle-base-legale">
+<h2 id="fr-pourquoi-et-sur-quelle-base-legale">3. Pourquoi et sur quelle base légale ?</h2>
+<div class="table-wrap">
+<table role="table">
+  <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Finalité</th><th scope="col" role="columnheader">Données</th><th scope="col" role="columnheader">Base légale (RGPD)</th></tr></thead>
+  <tbody role="rowgroup">
+    <tr role="row"><td role="cell" data-label="Finalité">Fournir Kamelo : espace famille, profils, exercices, séances, progrès, synchronisation, connexion et partage avec l’autre parent</td><td role="cell" data-label="Données">compte, famille, profils, exercices, résultats</td><td role="cell" data-label="Base légale (RGPD)">exécution du contrat, c’est-à-dire nos conditions d’utilisation (art. 6.1.b)</td></tr>
+    <tr role="row"><td role="cell" data-label="Finalité">Lire la photo du devoir avec l’IA et préparer les exercices, y compris les quiz de leçon</td><td role="cell" data-label="Données">photo, indice texte, classe, programme, langue</td><td role="cell" data-label="Base légale (RGPD)">votre consentement (art. 6.1.a et 8 ; en France, art. 45 de la loi Informatique et Libertés)</td></tr>
+    <tr role="row"><td role="cell" data-label="Finalité">Conserver une photo 30 jours pour apprendre un nouveau type d’exercice</td><td role="cell" data-label="Données">photo, consigne, classe, programme, langue</td><td role="cell" data-label="Base légale (RGPD)">votre consentement, donné pour chaque demande (art. 6.1.a)</td></tr>
+    <tr role="row"><td role="cell" data-label="Finalité">Gérer l’abonnement Premium et la limite gratuite de 3 scans par semaine</td><td role="cell" data-label="Données">statut d’abonnement, compteur de scans</td><td role="cell" data-label="Base légale (RGPD)">exécution du contrat (art. 6.1.b)</td></tr>
+    <tr role="row"><td role="cell" data-label="Finalité">Lire les mots à voix haute avec une voix en ligne, lorsqu’elle est activée</td><td role="cell" data-label="Données">mots et phrases de l’exercice</td><td role="cell" data-label="Base légale (RGPD)">exécution du contrat (art. 6.1.b)</td></tr>
+    <tr role="row"><td role="cell" data-label="Finalité">Sécurité : prévenir les abus (au plus 20 scans par heure), journaux techniques, trace des consentements, des exports et des suppressions</td><td role="cell" data-label="Données">identifiants techniques, journaux, événements</td><td role="cell" data-label="Base légale (RGPD)">intérêt légitime : sécuriser le service et pouvoir prouver le respect de nos obligations (art. 6.1.f)</td></tr>
+    <tr role="row"><td role="cell" data-label="Finalité">Suivre la qualité et le coût des analyses</td><td role="cell" data-label="Données">informations techniques des scans, statistiques agrégées</td><td role="cell" data-label="Base légale (RGPD)">intérêt légitime : fiabilité du service (art. 6.1.f)</td></tr>
+    <tr role="row"><td role="cell" data-label="Finalité">Vous répondre et traiter vos demandes</td><td role="cell" data-label="Données">e-mail, messages</td><td role="cell" data-label="Base légale (RGPD)">exécution du contrat ; obligation légale pour l’exercice de vos droits (art. 6.1.c)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Nous ne prenons aucune décision entièrement automatisée qui produirait des effets juridiques à votre égard ou à l’égard de votre enfant (art. 22 du RGPD). Kamelo ne donne pas de note, ne classe pas votre enfant et ne prédit rien à son sujet : les mots à revoir sont choisis par des règles simples (un mot manqué revient plus tard).</p>
+<p>Vous pouvez retirer votre consentement à tout moment dans Réglages › Confidentialité › « Retirer mon accord ». Les scans sont alors désactivés ; les exercices déjà créés restent disponibles et la saisie manuelle reste possible. Le retrait ne remet pas en cause les traitements déjà effectués.</p>
+</section>
+<section aria-labelledby="fr-qui-traite-vos-donnees-pour-nous">
+<h2 id="fr-qui-traite-vos-donnees-pour-nous">4. Qui traite vos données pour nous ?</h2>
+<p>Nous ne vendons ni ne partageons vos données. Seuls les prestataires suivants les traitent, pour notre compte et selon nos instructions, dans le cadre d’un accord de traitement des données (art. 28 du RGPD) :</p>
+<div class="table-wrap">
+<table role="table">
+  <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Prestataire</th><th scope="col" role="columnheader">Pour quoi faire</th><th scope="col" role="columnheader">Données</th><th scope="col" role="columnheader">Où</th><th scope="col" role="columnheader">Garanties</th></tr></thead>
+  <tbody role="rowgroup">
+    <tr role="row"><td role="cell" data-label="Prestataire">Supabase, Inc.</td><td role="cell" data-label="Pour quoi faire">base de données, connexion, stockage des fichiers, fonctions serveur</td><td role="cell" data-label="Données">toutes les données du service, dont les photos (24 heures au plus)</td><td role="cell" data-label="Où">Union européenne : Paris (serveurs Amazon Web Services, région eu-west-3)</td><td role="cell" data-label="Garanties">accord de traitement ; clauses contractuelles types pour tout accès depuis les États-Unis</td></tr>
+    <tr role="row"><td role="cell" data-label="Prestataire">Anthropic (API Claude)</td><td role="cell" data-label="Pour quoi faire">lire la photo du devoir, préparer les exercices et les quiz de leçon, vérifier que les textes montrés à l’enfant sont adaptés</td><td role="cell" data-label="Données">photo masquée, indice texte, classe, programme et langue, texte de la leçon ; jamais le prénom de l’enfant ni vos identifiants</td><td role="cell" data-label="Où">États-Unis</td><td role="cell" data-label="Garanties">conditions commerciales et accord de traitement d’Anthropic ; clauses contractuelles types ; aucun entraînement des modèles sur vos données</td></tr>
+    <tr role="row"><td role="cell" data-label="Prestataire">Amazon Web Services (Amazon Polly), lorsque la voix en ligne est activée ; ce n’est pas encore le cas : Kamelo utilise pour l’instant les voix de votre appareil</td><td role="cell" data-label="Pour quoi faire">lire les mots à voix haute</td><td role="cell" data-label="Données">mots et phrases à prononcer, langue, voix</td><td role="cell" data-label="Où">Union européenne : Paris (région eu-west-3)</td><td role="cell" data-label="Garanties">accord de traitement d’AWS ; clauses contractuelles types</td></tr>
+    <tr role="row"><td role="cell" data-label="Prestataire">RevenueCat, Inc.</td><td role="cell" data-label="Pour quoi faire">gérer le statut de l’abonnement</td><td role="cell" data-label="Données">identifiant aléatoire de votre famille, historique d’achat transmis par le store, pays, informations techniques sur l’appareil et l’application</td><td role="cell" data-label="Où">États-Unis</td><td role="cell" data-label="Garanties">accord de traitement ; clauses contractuelles types</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Anthropic n’utilise pas ces données pour entraîner ses modèles et ne les conserve pas au-delà du traitement de la requête, sauf exceptions prévues par ses conditions (au plus 30 jours, et jusqu’à 2 ans pour un contenu signalé par ses systèmes de sécurité).</p>
+<p>Autres destinataires :</p>
+<ul>
+  <li><strong>Apple et Google</strong> vendent et facturent l’abonnement via l’App Store et Google Play, selon leurs propres conditions et politiques de confidentialité : ils agissent alors en tant que responsables de traitement indépendants. « Se connecter avec Apple » est fourni par Apple. Les e-mails envoyés au support sont reçus dans une messagerie iCloud (Apple).</li>
+  <li><strong>Google</strong> reçoit les diagnostics de ML Kit sur Android (voir 2.4) ; <strong>GitHub</strong> héberge ce site (voir 2.5).</li>
+  <li>Nous ne communiquons des données à une autorité que si la loi l’exige, après avoir vérifié la validité de la demande.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-enfants">
+<h2 id="fr-enfants">5. Enfants</h2>
+<h3 id="fr-un-service-utilise-par-l-enfant-pilote-par-le-parent">5.1 Un service utilisé par l’enfant, piloté par le parent</h3>
+<ul>
+  <li>Kamelo s’adresse aux parents d’enfants de 6 à 11 ans. Les enfants n’ont pas de compte : c’est vous qui créez les profils, scannez les devoirs, confirmez chaque exercice avant que votre enfant le voie, et gérez les réglages, les achats et les consentements dans l’espace parent, protégé par un code à 6 chiffres.</li>
+  <li>Dans l’espace enfant : pas de publicité, pas d’outil d’analyse, pas d’achat, pas de lien externe, pas de classement, pas de discussion avec une IA, pas de profil public. Aucune donnée n’est envoyée à Claude depuis l’espace enfant. Pour appeler un adulte, votre enfant appuie sur la porte.</li>
+  <li>Réglages protecteurs par défaut : aucun profilage, aucune localisation, aucune notification adressée à l’enfant (le rappel quotidien s’adresse à vous), aucune incitation à acheter ou à prolonger le temps d’écran ; un jour sans entraînement n’est jamais présenté à l’enfant comme une perte.</li>
+  <li>Contenus préparés par l’IA : les quiz de leçon portent la mention « Questions générées par une IA et relues par un parent », et vous devez les relire avant de les proposer. Les textes produits par l’IA et destinés à l’enfant passent par un filtre de modération. Le bouton « Signaler un problème » nous permet d’examiner un contenu inadapté.</li>
+</ul>
+<h3 id="fr-france-et-union-europeenne">5.2 France et Union européenne</h3>
+<p>En France, lorsqu’un traitement repose sur le consentement et concerne un enfant de moins de 15 ans, le consentement doit être donné conjointement par l’enfant et par le titulaire de l’autorité parentale (article 45 de la loi Informatique et Libertés, article 8 du RGPD). Vous donnez votre accord dans l’espace parent. Votre enfant dispose d’une notice écrite pour lui, « Kamelo et toi », accessible depuis la porte de l’espace enfant et sur ce site, que nous vous invitons à lire avec lui ; il exprime son accord en commençant sa première séance. L’autre parent peut s’opposer au traitement en nous écrivant.</p>
+<h3 id="fr-royaume-uni">5.3 Royaume-Uni</h3>
+<p>Kamelo applique le code britannique de conception adaptée à l’âge (« Age appropriate design code », ou Children’s Code) : intérêt supérieur de l’enfant, analyse d’impact, réglages protecteurs par défaut, minimisation des données, pas de profilage, pas de techniques d’incitation, information adaptée à l’enfant, et transparence envers lui sur ce que voit le parent. Au Royaume-Uni, l’âge du consentement numérique est de 13 ans : le consentement à la lecture des photos est donné par vous.</p>
+<h3 id="fr-etats-unis-avis-aux-parents-coppa">5.4 États-Unis : avis aux parents (COPPA)</h3>
+<ul>
+  <li><strong>Opérateur</strong> : Thomas Sobstyl, coordonnées à la section 1.</li>
+  <li><strong>Informations recueillies auprès de l’enfant</strong> dans l’espace enfant : ses réponses et résultats d’entraînement, la durée des séances et ses récompenses (gouttes de couleur, autocollants, jours d’entraînement), rattachés à son profil et à l’identifiant technique aléatoire de votre famille. Aucun nom complet, aucune coordonnée, aucune photo, aucune voix, aucune localisation. L’enfant ne peut rien rendre public.</li>
+  <li><strong>Utilisation</strong> : uniquement pour faire fonctionner les exercices, vous montrer les progrès, sauvegarder les données de votre famille et sécuriser le service. Jamais pour la publicité ou le profilage commercial. L’identifiant technique ne sert qu’à ces opérations internes.</li>
+  <li><strong>Communication</strong> : aucune à des tiers, en dehors des prestataires qui hébergent et font fonctionner le service pour notre compte (section 4). Ces informations ne sont jamais envoyées à Anthropic.</li>
+  <li><strong>Création des profils</strong> : seul un parent peut créer le profil d’un enfant, depuis l’espace parent protégé par son code.</li>
+  <li><strong>Vos droits</strong> : consulter les informations de votre enfant (espace parent, export), les faire supprimer (supprimer le profil ou le compte, ou nous écrire), refuser qu’elles continuent d’être collectées (ne plus utiliser l’espace enfant ou supprimer le profil). Durées de conservation : section 6.</li>
+</ul>
+<h3 id="fr-une-question-sur-les-donnees-d-un-enfant">5.5 Une question sur les données d’un enfant ?</h3>
+<p>Si vous pensez que nous détenons des données concernant un enfant sans l’accord de ses parents, écrivez-nous : nous les supprimerons.</p>
+</section>
+<section aria-labelledby="fr-combien-de-temps-gardons-nous-les-donnees">
+<h2 id="fr-combien-de-temps-gardons-nous-les-donnees">6. Combien de temps gardons-nous les données ?</h2>
+<div class="table-wrap">
+<table role="table">
+  <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Données</th><th scope="col" role="columnheader">Durée de conservation</th></tr></thead>
+  <tbody role="rowgroup">
+    <tr role="row"><td role="cell" data-label="Données">Photo d’un devoir (scan)</td><td role="cell" data-label="Durée de conservation">24 heures au plus, puis suppression automatique ; seules des informations techniques sans image restent</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Photo d’une demande de nouveau type d’exercice</td><td role="cell" data-label="Durée de conservation">30 jours, puis suppression automatique ; le texte de la demande et notre réponse restent visibles dans « Mes demandes » tant que le compte existe</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Exercices, séances, progrès, récompenses</td><td role="cell" data-label="Durée de conservation">tant que le compte existe ; supprimés avec le profil de l’enfant concerné ou avec le compte</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Famille sans compte, inactive</td><td role="cell" data-label="Durée de conservation">18 mois après la dernière activité, puis suppression automatique</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Compte (e-mail ou identifiant Apple)</td><td role="cell" data-label="Durée de conservation">jusqu’à la suppression du compte</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Fichier d’export de vos données</td><td role="cell" data-label="Durée de conservation">lien valable 1 heure, fichier supprimé après 1 jour</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Historique des consentements et journal des événements (création, consentements, exports, suppression), réduits au minimum</td><td role="cell" data-label="Durée de conservation">3 ans après la suppression du compte, pour pouvoir prouver le respect de nos obligations</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Statut d’abonnement</td><td role="cell" data-label="Durée de conservation">tant que le compte existe ; l’historique d’achat est conservé par Apple, Google et RevenueCat selon leurs propres règles, le temps nécessaire à la gestion de l’abonnement, des remboursements et de la comptabilité</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">E-mails envoyés au support</td><td role="cell" data-label="Durée de conservation">12 mois après le dernier échange</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Journaux techniques de l’hébergeur</td><td role="cell" data-label="Durée de conservation">7 jours au plus</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Données traitées par Anthropic</td><td role="cell" data-label="Durée de conservation">aucune conservation au-delà de la requête, sauf exceptions prévues par ses conditions (au plus 30 jours ; jusqu’à 2 ans pour un contenu signalé)</td></tr>
+    <tr role="row"><td role="cell" data-label="Données">Cache des voix (mots prononcés, sans donnée personnelle)</td><td role="cell" data-label="Durée de conservation">sans limite</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+<section aria-labelledby="fr-vos-droits">
+<h2 id="fr-vos-droits">7. Vos droits</h2>
+<p>Vous disposez des droits d’accès, de rectification, d’effacement, de limitation, de portabilité et d’opposition, du droit de retirer votre consentement à tout moment et, en France, du droit de définir des directives sur le sort de vos données après votre décès. Vous exercez aussi ces droits pour votre enfant, et votre enfant peut nous écrire lui-même.</p>
+<p>Dans l’application (espace parent) :</p>
+<ul>
+  <li><strong>Consulter et corriger</strong> : profils, exercices et progrès sont visibles et modifiables dans l’espace parent.</li>
+  <li><strong>Exporter</strong> : Réglages › Confidentialité › « Exporter mes données » (fichier JSON).</li>
+  <li><strong>Retirer votre accord</strong> pour la lecture des photos : Réglages › Confidentialité.</li>
+  <li><strong>Supprimer le profil d’un enfant</strong> et ses progrès : depuis la liste des enfants, dans l’espace parent.</li>
+  <li><strong>Tout supprimer</strong> : Réglages › Confidentialité › « Supprimer mon compte et toutes les données », à confirmer avec votre code parent. La suppression est immédiate sur nos serveurs et efface aussi les données de l’appareil. Elle ne résilie pas un abonnement souscrit sur l’App Store ou Google Play : résiliez-le dans les réglages de votre store.</li>
+</ul>
+<p>Par e-mail, à <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a> : nous répondons dans un délai d’un mois, prolongeable de deux mois pour une demande complexe. Nous pouvons vous demander de prouver que la demande vient bien de vous, par exemple en écrivant depuis l’adresse de votre compte. Sans l’application, suivez les indications de la page <a href="support.html#fr">Aide</a>.</p>
+<p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir une autorité de contrôle :</p>
+<ul>
+  <li>France : Commission nationale de l’informatique et des libertés (CNIL), 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, <a href="https://www.cnil.fr">www.cnil.fr</a> ; ou l’autorité du pays de l’Union européenne où vous vivez.</li>
+  <li>Royaume-Uni : Information Commissioner’s Office (ICO), <a href="https://ico.org.uk">ico.org.uk</a>.</li>
+  <li>États-Unis : Federal Trade Commission (FTC), <a href="https://reportfraud.ftc.gov">reportfraud.ftc.gov</a>.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-securite">
+<h2 id="fr-securite">8. Sécurité</h2>
+<ul>
+  <li>Échanges chiffrés (HTTPS) et données chiffrées au repos par notre hébergeur.</li>
+  <li>Cloisonnement : chaque famille n’accède qu’à ses propres données, grâce à des règles de sécurité appliquées par la base de données elle-même.</li>
+  <li>Clés secrètes conservées uniquement sur nos serveurs, jamais dans l’application.</li>
+  <li>Photos rangées dans un espace de stockage privé et supprimées sous 24 heures.</li>
+  <li>Code parent conservé uniquement sur l’appareil, sous forme d’empreinte.</li>
+  <li>Accès d’administration réservés à l’éditeur et protégés par une double authentification.</li>
+  <li>Programme de sécurité écrit, revu au moins une fois par an. En cas de violation de données, nous prévenons la CNIL sous 72 heures lorsque la loi l’exige, et nous informons directement les familles concernées si le risque est élevé.</li>
+</ul>
+<p>Aucun système n’est invulnérable : si vous remarquez un problème de sécurité, écrivez-nous.</p>
+</section>
+<section aria-labelledby="fr-transferts-hors-de-l-union-europeenne">
+<h2 id="fr-transferts-hors-de-l-union-europeenne">9. Transferts hors de l’Union européenne</h2>
+<p>Vos données sont hébergées dans l’Union européenne (Paris). Certaines sont transférées aux États-Unis :</p>
+<ul>
+  <li>vers Anthropic : les photos masquées, les indices texte et les textes des exercices, pour leur lecture par l’IA ;</li>
+  <li>vers RevenueCat : le statut d’abonnement ;</li>
+  <li>de façon ponctuelle, lorsque les équipes de Supabase ou d’Amazon Web Services interviennent pour la maintenance ou le support.</li>
+</ul>
+<p>Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne (décision 2021/914) et, pour les données de résidents britanniques, par l’avenant britannique à ces clauses. Nous avons évalué ces transferts (analyse d’impact des transferts) et ajouté des mesures complémentaires : masquage du nom, réduction de la photo, suppression rapide, chiffrement, aucune utilisation pour l’entraînement des modèles. Vous pouvez obtenir une copie des garanties en nous écrivant.</p>
+</section>
+<section aria-labelledby="fr-modifications">
+<h2 id="fr-modifications">10. Modifications</h2>
+<p>Nous mettrons cette politique à jour si le service évolue, par exemple en cas de nouveau prestataire ou de nouvelle fonctionnalité. En cas de changement important, nous vous préviendrons dans l’application avant qu’il ne s’applique et, lorsque la loi l’exige, nous vous redemanderons votre accord. La version et la date figurent en haut de cette page ; les versions précédentes sont disponibles sur demande.</p>
+</section>
+<section aria-labelledby="fr-version-pour-les-enfants">
+<h2 id="fr-version-pour-les-enfants">11. Version pour les enfants</h2>
+<p>Une notice écrite pour les enfants explique Kamelo avec des mots simples : <a href="children.html#fr">Kamelo et toi</a>. Elle est aussi accessible dans l’application, depuis la porte de l’espace enfant (« Comment marche Kamelo ? »). Nous vous invitons à la lire avec votre enfant.</p>
+</section>
+</article>
+<article class="doc" data-lang="en" lang="en" id="en">
+  <header class="doc-head">
+    <p class="eyebrow">Kamelo</p>
+    <h1 id="en-top">Privacy policy</h1>
+    <p class="doc-meta"><em>Version 1.0 — 21 September 2026</em></p>
+  </header>
+<p>Kamelo helps your child practise tonight’s homework: you photograph the instruction or the lesson, an artificial intelligence reads it, you check it, and your child practises with Kamelo, the colour-changing chameleon. This policy explains which data we process, why, with whom, for how long, and how to exercise your rights. It applies to the Kamelo app (iPhone, iPad and Android) and to the website fox1304.github.io/kamelo-site.</p>
+<aside class="callout">
+<p><strong>In short</strong></p>
+<ul>
+  <li>The homework photo is cropped on your phone, your child’s name is masked, then it is read by Anthropic’s Claude AI (United States) and deleted from our servers within 24 hours.</li>
+  <li>We never ask for your child’s surname, school, address or date of birth.</li>
+  <li>No advertising, no tracking, no selling of data. The child space contains no analytics, no purchases and no external links that can be reached without your parent code.</li>
+  <li>Our servers are in the European Union (Paris). You can export your data or delete everything from the app, at any time.</li>
+</ul>
+</aside>
+<nav class="toc" aria-labelledby="toc-en">
+  <h2 id="toc-en" class="toc-title">Contents</h2>
+  <ol>
+    <li><a href="#en-who-we-are">1. Who we are</a></li>
+    <li><a href="#en-what-data-we-process">2. What data we process</a></li>
+    <li><a href="#en-why-we-process-data-and-on-what-legal-basis">3. Why we process data, and on what legal basis</a></li>
+    <li><a href="#en-who-processes-data-on-our-behalf">4. Who processes data on our behalf</a></li>
+    <li><a href="#en-children">5. Children</a></li>
+    <li><a href="#en-how-long-we-keep-data">6. How long we keep data</a></li>
+    <li><a href="#en-your-rights">7. Your rights</a></li>
+    <li><a href="#en-security">8. Security</a></li>
+    <li><a href="#en-transfers-outside-the-european-union">9. Transfers outside the European Union</a></li>
+    <li><a href="#en-changes">10. Changes</a></li>
+    <li><a href="#en-version-for-children">11. Version for children</a></li>
+  </ol>
+</nav>
+<section aria-labelledby="en-who-we-are">
+<h2 id="en-who-we-are">1. Who we are</h2>
+<p>Kamelo is published by Thomas Sobstyl, an independent developer based in France, who is the controller of your personal data.</p>
+<ul>
+  <li>Contact for your data, support and your rights: <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a>. We reply personally, in French or English.</li>
+  <li>Postal address and telephone (legal notices): <mark class="todo">[FOUNDER TO CONFIRM]</mark></li>
+  <li>Data protection officer: none appointed at this time <mark class="todo">[FOUNDER TO CONFIRM]</mark>; please write to the address above.</li>
+  <li>UK representative (Article 27 UK GDPR): <mark class="todo">[FOUNDER TO CONFIRM]</mark></li>
+</ul>
+</section>
+<section aria-labelledby="en-what-data-we-process">
+<h2 id="en-what-data-we-process">2. What data we process</h2>
+<p>We collect the minimum we need. You can use Kamelo without creating an account.</p>
+<h3 id="en-you-the-parent">2.1 You, the parent</h3>
+<ul>
+  <li><strong>Without an account (the default)</strong>: a random technical identifier, created by the app on first launch, to save and sync your family’s data. It is neither the advertising identifier nor a hardware identifier of your device.</li>
+  <li><strong>If you sign in</strong> (to back up, to find your data on another device or to share it with the other parent): your email address, or the identifier provided by “Sign in with Apple” (which may be a private relay address), and sign-in dates.</li>
+  <li><strong>Family settings</strong>: country, language, time zone, plan (free or Premium). The time of the daily reminder stays on your device.</li>
+  <li><strong>Consents</strong>: what you agreed to or withdrew, the version of the text and the date.</li>
+  <li><strong>Subscription</strong>: status, plan and renewal or expiry dates, sent by Apple or Google through our provider RevenueCat. We never see your payment details.</li>
+  <li><strong>Your messages to us</strong>: your emails, your content reports (“Report a problem”) and your requests for new exercise types, with our replies.</li>
+  <li><strong>Parent code</strong>: it stays on your device as a salted hash and is never sent to us.</li>
+</ul>
+<h3 id="en-your-child">2.2 Your child</h3>
+<ul>
+  <li><strong>Profile</strong>: a first name or nickname that you choose, the school year, the curriculum (France, United Kingdom or United States), a favourite colour, the dictation mode and the preferred voice. No surname, date of birth, school or photo of the child.</li>
+  <li><strong>Exercises</strong>: the exercises you confirmed (word lists, times tables, lesson questions, poems…), their date and status.</li>
+  <li><strong>Practice</strong>: answers and results of sessions (right first time, “almost”, words to review), their duration, colour drops, stickers and practice days.</li>
+  <li>No location data, no voice recordings, no face or emotion analysis.</li>
+</ul>
+<h3 id="en-homework-photos">2.3 Homework photos</h3>
+<ul>
+  <li>You take or import the photo in the parent space. Before sending it, your device crops it to the page, shrinks it (1,568 pixels at most), removes its metadata (including location) and masks the lines at the top of the page that look like a name, a class or a date.</li>
+  <li>The text read by your device (character recognition) may be sent with the photo as a hint, without the masked lines. The AI also receives the school year, the curriculum and the language, never your child’s first name or your identifiers. It is instructed never to copy the name of a person or a school.</li>
+  <li>The photo is kept for at most 24 hours on our servers, for the analysis, then deleted automatically. Only the exercise you confirm stays in your account, with technical information about the analysis (model used, duration, cost, confidence level), without the image.</li>
+  <li>If you ask Kamelo to learn a new exercise type, and only with your explicit consent for that request, the photo is kept for 30 days for review, then deleted.</li>
+  <li>Tip: frame only the instruction or the lesson; avoid photographing faces or personal documents.</li>
+</ul>
+<h3 id="en-on-your-device">2.4 On your device</h3>
+<ul>
+  <li>Kamelo works on your device first: your family’s data is stored there, then synced with our servers when possible. On iPhone and iPad, it may be included in your device backups (iCloud or computer), which are governed by Apple’s terms; on Android, Kamelo turns off the automatic backup of its data.</li>
+  <li>Your device’s own speech voices work offline: no text is sent when they are used.</li>
+  <li>On Android, Google’s document scanner and text recognition (ML Kit, provided by Google Play services) run on the device: the photo is not sent to Google. Google may receive technical diagnostics about these tools (device and app model and version, performance, error codes, installation identifier).</li>
+</ul>
+<h3 id="en-on-this-website">2.5 On this website</h3>
+<p>This website uses no cookies, no audience measurement, no external fonts or scripts, and stores nothing on your device. It is hosted by GitHub (GitHub Pages), which logs visitors’ IP addresses for security purposes under its own privacy statement.</p>
+<h3 id="en-what-we-don-t-do">2.6 What we don’t do</h3>
+<ul>
+  <li>No advertising, no tracking, no advertising identifier: the app does not request it.</li>
+  <li>No audience measurement and no crash-reporting tool in the current version. If we ever add one to the parent space, it will be after updating this policy, and never in the child space.</li>
+  <li>No selling, renting or sharing of data for commercial or advertising purposes.</li>
+  <li>No training of AI models with your data or your child’s data.</li>
+  <li>No free conversation between your child and an AI: all of Kamelo’s lines are written in advance.</li>
+</ul>
+</section>
+<section aria-labelledby="en-why-we-process-data-and-on-what-legal-basis">
+<h2 id="en-why-we-process-data-and-on-what-legal-basis">3. Why we process data, and on what legal basis</h2>
+<div class="table-wrap">
+<table role="table">
+  <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Purpose</th><th scope="col" role="columnheader">Data</th><th scope="col" role="columnheader">Legal basis (GDPR)</th></tr></thead>
+  <tbody role="rowgroup">
+    <tr role="row"><td role="cell" data-label="Purpose">Provide Kamelo: family space, profiles, exercises, sessions, progress, sync, sign-in and sharing with the other parent</td><td role="cell" data-label="Data">account, family, profiles, exercises, results</td><td role="cell" data-label="Legal basis (GDPR)">performance of the contract, that is our terms of use (Art. 6(1)(b))</td></tr>
+    <tr role="row"><td role="cell" data-label="Purpose">Read the homework photo with AI and prepare the exercises, including lesson quizzes</td><td role="cell" data-label="Data">photo, text hint, school year, curriculum, language</td><td role="cell" data-label="Legal basis (GDPR)">your consent (Art. 6(1)(a) and 8; in France, Art. 45 of the French Data Protection Act)</td></tr>
+    <tr role="row"><td role="cell" data-label="Purpose">Keep a photo for 30 days to learn a new exercise type</td><td role="cell" data-label="Data">photo, instruction, school year, curriculum, language</td><td role="cell" data-label="Legal basis (GDPR)">your consent, given for each request (Art. 6(1)(a))</td></tr>
+    <tr role="row"><td role="cell" data-label="Purpose">Manage the Premium subscription and the free limit of 3 scans per week</td><td role="cell" data-label="Data">subscription status, scan counter</td><td role="cell" data-label="Legal basis (GDPR)">performance of the contract (Art. 6(1)(b))</td></tr>
+    <tr role="row"><td role="cell" data-label="Purpose">Read words aloud with an online voice, when enabled</td><td role="cell" data-label="Data">words and phrases of the exercise</td><td role="cell" data-label="Legal basis (GDPR)">performance of the contract (Art. 6(1)(b))</td></tr>
+    <tr role="row"><td role="cell" data-label="Purpose">Security: prevent abuse (at most 20 scans per hour), technical logs, records of consents, exports and deletions</td><td role="cell" data-label="Data">technical identifiers, logs, events</td><td role="cell" data-label="Legal basis (GDPR)">legitimate interest: keeping the service secure and being able to prove we meet our obligations (Art. 6(1)(f))</td></tr>
+    <tr role="row"><td role="cell" data-label="Purpose">Monitor the quality and cost of analyses</td><td role="cell" data-label="Data">technical scan information, aggregate statistics</td><td role="cell" data-label="Legal basis (GDPR)">legitimate interest: reliability of the service (Art. 6(1)(f))</td></tr>
+    <tr role="row"><td role="cell" data-label="Purpose">Answer you and handle your requests</td><td role="cell" data-label="Data">email, messages</td><td role="cell" data-label="Legal basis (GDPR)">performance of the contract; legal obligation for your rights (Art. 6(1)(c))</td></tr>
+  </tbody>
+</table>
+</div>
+<p>We make no solely automated decision that has legal or similarly significant effects on you or your child (Art. 22 GDPR). Kamelo gives no marks, does not rank your child and predicts nothing about them: words to review are chosen by simple rules (a missed word comes back later).</p>
+<p>You can withdraw your consent at any time in Settings › Privacy › “Withdraw my consent”. Scanning is then turned off; exercises already created remain available and manual entry still works. Withdrawal does not affect processing already carried out.</p>
+</section>
+<section aria-labelledby="en-who-processes-data-on-our-behalf">
+<h2 id="en-who-processes-data-on-our-behalf">4. Who processes data on our behalf</h2>
+<p>We do not sell or share your data. Only the following providers process it, on our behalf and on our instructions, under a data processing agreement (Art. 28 GDPR):</p>
+<div class="table-wrap">
+<table role="table">
+  <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Provider</th><th scope="col" role="columnheader">What for</th><th scope="col" role="columnheader">Data</th><th scope="col" role="columnheader">Where</th><th scope="col" role="columnheader">Safeguards</th></tr></thead>
+  <tbody role="rowgroup">
+    <tr role="row"><td role="cell" data-label="Provider">Supabase, Inc.</td><td role="cell" data-label="What for">database, sign-in, file storage, server functions</td><td role="cell" data-label="Data">all service data, including photos (24 hours at most)</td><td role="cell" data-label="Where">European Union: Paris (Amazon Web Services servers, eu-west-3 region)</td><td role="cell" data-label="Safeguards">data processing agreement; standard contractual clauses for any access from the United States</td></tr>
+    <tr role="row"><td role="cell" data-label="Provider">Anthropic (Claude API)</td><td role="cell" data-label="What for">read the homework photo, prepare exercises and lesson quizzes, check that texts shown to the child are suitable</td><td role="cell" data-label="Data">masked photo, text hint, school year, curriculum and language, lesson text; never the child’s first name or your identifiers</td><td role="cell" data-label="Where">United States</td><td role="cell" data-label="Safeguards">Anthropic’s commercial terms and data processing agreement; standard contractual clauses; no model training on your data</td></tr>
+    <tr role="row"><td role="cell" data-label="Provider">Amazon Web Services (Amazon Polly), when the online voice is enabled; it is not yet: Kamelo currently uses your device’s voices</td><td role="cell" data-label="What for">read words aloud</td><td role="cell" data-label="Data">words and phrases to speak, language, voice</td><td role="cell" data-label="Where">European Union: Paris (eu-west-3 region)</td><td role="cell" data-label="Safeguards">AWS data processing agreement; standard contractual clauses</td></tr>
+    <tr role="row"><td role="cell" data-label="Provider">RevenueCat, Inc.</td><td role="cell" data-label="What for">manage the subscription status</td><td role="cell" data-label="Data">your family’s random identifier, purchase history sent by the store, country, technical information about the device and app</td><td role="cell" data-label="Where">United States</td><td role="cell" data-label="Safeguards">data processing agreement; standard contractual clauses</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Anthropic does not use this data to train its models and does not keep it beyond processing the request, except as provided in its terms (30 days at most, and up to 2 years for content flagged by its safety systems).</p>
+<p>Other recipients:</p>
+<ul>
+  <li><strong>Apple and Google</strong> sell and bill the subscription through the App Store and Google Play under their own terms and privacy policies: for this they act as independent controllers. “Sign in with Apple” is provided by Apple. Emails sent to support are received in an iCloud (Apple) mailbox.</li>
+  <li><strong>Google</strong> receives ML Kit diagnostics on Android (see 2.4); <strong>GitHub</strong> hosts this website (see 2.5).</li>
+  <li>We only disclose data to an authority when the law requires it, after checking that the request is valid.</li>
+</ul>
+</section>
+<section aria-labelledby="en-children">
+<h2 id="en-children">5. Children</h2>
+<h3 id="en-a-service-used-by-the-child-run-by-the-parent">5.1 A service used by the child, run by the parent</h3>
+<ul>
+  <li>Kamelo is designed for parents of children aged 6 to 11. Children have no account: you create the profiles, scan the homework, confirm every exercise before your child sees it, and manage settings, purchases and consents in the parent space, protected by a 6-digit code.</li>
+  <li>In the child space: no advertising, no analytics, no purchases, no external links, no leaderboards, no chat with an AI, no public profile. No data is sent to Claude from the child space. To call a grown-up, your child taps the door.</li>
+  <li>High-privacy defaults: no profiling, no location, no notifications aimed at the child (the daily reminder is addressed to you), no nudges to buy or to extend screen time; a day without practice is never presented to the child as a loss.</li>
+  <li>AI-prepared content: lesson quizzes carry the label “Questions generated by AI and reviewed by a parent”, and you must review them before assigning them. Texts produced by the AI for the child go through a moderation filter. The “Report a problem” button lets us review unsuitable content.</li>
+</ul>
+<h3 id="en-france-and-the-european-union">5.2 France and the European Union</h3>
+<p>In France, when processing is based on consent and concerns a child under 15, consent must be given jointly by the child and the holder of parental responsibility (Article 45 of the French Data Protection Act, Article 8 GDPR). You give your consent in the parent space. Your child has a notice written for them, “Kamelo and you”, available from the door in the child space and on this website, which we invite you to read together; your child agrees by starting their first session. The other parent can object to the processing by writing to us.</p>
+<h3 id="en-united-kingdom">5.3 United Kingdom</h3>
+<p>Kamelo follows the UK Age appropriate design code (the Children’s Code): best interests of the child, impact assessment, high-privacy defaults, data minimisation, no profiling, no nudge techniques, child-friendly information, and transparency towards the child about what the parent can see. In the UK the age of digital consent is 13: consent to photo reading is given by you.</p>
+<h3 id="en-united-states-notice-to-parents-coppa">5.4 United States: notice to parents (COPPA)</h3>
+<ul>
+  <li><strong>Operator</strong>: Thomas Sobstyl, contact details in section 1.</li>
+  <li><strong>Information collected from the child</strong> in the child space: their answers and practice results, session duration and rewards (colour drops, stickers, practice days), linked to their profile and to your family’s random technical identifier. No full name, no contact details, no photo, no voice, no location. The child cannot make anything public.</li>
+  <li><strong>Use</strong>: only to run the exercises, show you progress, back up your family’s data and keep the service secure. Never for advertising or commercial profiling. The technical identifier is used only for these internal operations.</li>
+  <li><strong>Disclosure</strong>: none to third parties, apart from the providers that host and run the service on our behalf (section 4). This information is never sent to Anthropic.</li>
+  <li><strong>Profile creation</strong>: only a parent can create a child’s profile, from the parent space protected by their code.</li>
+  <li><strong>Your rights</strong>: review your child’s information (parent space, export), have it deleted (delete the profile or the account, or write to us), and refuse its further collection (stop using the child space or delete the profile). Retention periods: section 6.</li>
+</ul>
+<h3 id="en-a-question-about-a-child-s-data">5.5 A question about a child’s data?</h3>
+<p>If you believe we hold data about a child without their parents’ agreement, write to us: we will delete it.</p>
+</section>
+<section aria-labelledby="en-how-long-we-keep-data">
+<h2 id="en-how-long-we-keep-data">6. How long we keep data</h2>
+<div class="table-wrap">
+<table role="table">
+  <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Data</th><th scope="col" role="columnheader">Retention period</th></tr></thead>
+  <tbody role="rowgroup">
+    <tr role="row"><td role="cell" data-label="Data">Homework photo (scan)</td><td role="cell" data-label="Retention period">24 hours at most, then deleted automatically; only technical information without the image remains</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Photo sent with a new exercise type request</td><td role="cell" data-label="Retention period">30 days, then deleted automatically; the request text and our reply remain visible in “My requests” while the account exists</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Exercises, sessions, progress, rewards</td><td role="cell" data-label="Retention period">while the account exists; deleted with the child’s profile or with the account</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Family without an account, inactive</td><td role="cell" data-label="Retention period">18 months after the last activity, then deleted automatically</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Account (email or Apple identifier)</td><td role="cell" data-label="Retention period">until the account is deleted</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Export file of your data</td><td role="cell" data-label="Retention period">link valid for 1 hour, file deleted after 1 day</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Consent history and event log (creation, consents, exports, deletion), minimised</td><td role="cell" data-label="Retention period">3 years after the account is deleted, so that we can prove we met our obligations</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Subscription status</td><td role="cell" data-label="Retention period">while the account exists; purchase history is kept by Apple, Google and RevenueCat under their own rules, as long as needed for the subscription, refunds and accounting</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Emails sent to support</td><td role="cell" data-label="Retention period">12 months after the last exchange</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Hosting provider’s technical logs</td><td role="cell" data-label="Retention period">7 days at most</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Data processed by Anthropic</td><td role="cell" data-label="Retention period">not kept beyond the request, except as provided in its terms (30 days at most; up to 2 years for flagged content)</td></tr>
+    <tr role="row"><td role="cell" data-label="Data">Voice cache (spoken words, no personal data)</td><td role="cell" data-label="Retention period">no limit</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+<section aria-labelledby="en-your-rights">
+<h2 id="en-your-rights">7. Your rights</h2>
+<p>You have the rights of access, rectification, erasure, restriction, portability and objection, the right to withdraw your consent at any time and, in France, the right to give instructions about what happens to your data after your death. You also exercise these rights for your child, and your child may write to us directly.</p>
+<p>In the app (parent space):</p>
+<ul>
+  <li><strong>Review and correct</strong>: profiles, exercises and progress can be seen and edited in the parent space.</li>
+  <li><strong>Export</strong>: Settings › Privacy › “Export my data” (JSON file).</li>
+  <li><strong>Withdraw your consent</strong> to photo reading: Settings › Privacy.</li>
+  <li><strong>Delete a child’s profile</strong> and progress: from the list of children in the parent space.</li>
+  <li><strong>Delete everything</strong>: Settings › Privacy › “Delete my account and all data”, confirmed with your parent code. Deletion is immediate on our servers and also erases the data on the device. It does not cancel a subscription bought on the App Store or Google Play: cancel it in your store settings.</li>
+</ul>
+<p>By email, at <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a>: we answer within one month, which may be extended by two months for a complex request. We may ask you to prove that the request comes from you, for example by writing from your account’s email address. Without the app, follow the instructions on the <a href="support.html#en">Help</a> page.</p>
+<p>If you think your rights are not respected, you can complain to a supervisory authority:</p>
+<ul>
+  <li>France: Commission nationale de l’informatique et des libertés (CNIL), 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, <a href="https://www.cnil.fr">www.cnil.fr</a>; or the authority of the EU country where you live.</li>
+  <li>United Kingdom: Information Commissioner’s Office (ICO), <a href="https://ico.org.uk">ico.org.uk</a>.</li>
+  <li>United States: Federal Trade Commission (FTC), <a href="https://reportfraud.ftc.gov">reportfraud.ftc.gov</a>.</li>
+</ul>
+</section>
+<section aria-labelledby="en-security">
+<h2 id="en-security">8. Security</h2>
+<ul>
+  <li>Encrypted connections (HTTPS) and data encrypted at rest by our hosting provider.</li>
+  <li>Isolation: each family can only reach its own data, through security rules enforced by the database itself.</li>
+  <li>Secret keys kept only on our servers, never in the app.</li>
+  <li>Photos stored in a private storage area and deleted within 24 hours.</li>
+  <li>Parent code kept only on the device, as a hash.</li>
+  <li>Administrative access limited to the publisher and protected by two-factor authentication.</li>
+  <li>A written security programme, reviewed at least once a year. In the event of a data breach, we notify the CNIL within 72 hours when the law requires it, and we inform the families concerned directly if the risk is high.</li>
+</ul>
+<p>No system is invulnerable: if you notice a security problem, please write to us.</p>
+</section>
+<section aria-labelledby="en-transfers-outside-the-european-union">
+<h2 id="en-transfers-outside-the-european-union">9. Transfers outside the European Union</h2>
+<p>Your data is hosted in the European Union (Paris). Some of it is transferred to the United States:</p>
+<ul>
+  <li>to Anthropic: masked photos, text hints and exercise texts, to be read by the AI;</li>
+  <li>to RevenueCat: the subscription status;</li>
+  <li>occasionally, when Supabase or Amazon Web Services staff carry out maintenance or support.</li>
+</ul>
+<p>These transfers are covered by the European Commission’s standard contractual clauses (Decision 2021/914) and, for UK residents’ data, by the UK addendum to those clauses. We have assessed these transfers (transfer impact assessment) and added supplementary measures: name masking, photo reduction, rapid deletion, encryption, no use for model training. You can obtain a copy of the safeguards by writing to us.</p>
+</section>
+<section aria-labelledby="en-changes">
+<h2 id="en-changes">10. Changes</h2>
+<p>We will update this policy if the service changes, for example with a new provider or a new feature. For any significant change, we will tell you in the app before it applies and, where the law requires it, ask for your consent again. The version and date appear at the top of this page; previous versions are available on request.</p>
+</section>
+<section aria-labelledby="en-version-for-children">
+<h2 id="en-version-for-children">11. Version for children</h2>
+<p>A notice written for children explains Kamelo in simple words: <a href="children.html#en">Kamelo and you</a>. It is also available in the app, from the door in the child space (“How does Kamelo work?”). We invite you to read it with your child.</p>
+</section>
+</article>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-block" data-lang="fr">
+      <nav aria-label="Liens utiles">
+        <ul class="footer-links">
+          <li><a href="privacy.html#fr">Confidentialité</a></li>
+          <li><a href="terms.html#fr">Conditions d’utilisation</a></li>
+          <li><a href="terms.html#fr-mentions-legales">Mentions légales</a></li>
+          <li><a href="support.html#fr">Aide et contact</a></li>
+          <li><a href="children.html#fr">Pour les enfants</a></li>
+          <li><a href="press.html#fr">Presse</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Ce site n’utilise aucun cookie ni aucun traceur. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+    <div class="footer-block" data-lang="en" lang="en">
+      <nav aria-label="Useful links">
+        <ul class="footer-links">
+          <li><a href="privacy.html#en">Privacy</a></li>
+          <li><a href="terms.html#en">Terms of use</a></li>
+          <li><a href="terms.html#en-legal-notice">Legal notice</a></li>
+          <li><a href="support.html#en">Help and contact</a></li>
+          <li><a href="children.html#en">For children</a></li>
+          <li><a href="press.html#en">Press</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">This website uses no cookies and no trackers. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

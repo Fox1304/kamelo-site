@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr" data-title-fr="Page introuvable · Kamelo" data-title-en="Page not found · Kamelo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'sha256-I9BgKOawifnJGNiBx4F5HJiavsiwz4P4nHcMTh/zUJw='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Page introuvable · Kamelo</title>
+<meta name="description" content="Cette page s’est camouflée. This page is camouflaged.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamelo">
+<meta property="og:title" content="Page introuvable · Kamelo">
+<meta property="og:description" content="Cette page s’est camouflée. This page is camouflaged.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF8EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="https://fox1304.github.io/kamelo-site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fox1304.github.io/kamelo-site/style.css">
+<script>(function () {
+  var root = document.documentElement, loc = window.location;
+  function langOf(h) {
+    h = (h || "").replace(/^#/, "").toLowerCase();
+    if (h === "en" || h.slice(0, 3) === "en-") return "en";
+    if (h === "fr" || h.slice(0, 3) === "fr-") return "fr";
+    return null;
+  }
+  function browserLang() {
+    var list = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase().slice(0, 2);
+      if (l === "fr" || l === "en") return l;
+    }
+    return "fr";
+  }
+  function apply(lang) {
+    root.setAttribute("data-show", lang);
+    root.setAttribute("lang", lang);
+    var t = root.getAttribute("data-title-" + lang);
+    if (t) document.title = t;
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) {
+      if (sw[i].getAttribute("data-set-lang") === lang) sw[i].setAttribute("aria-current", "true");
+      else sw[i].removeAttribute("aria-current");
+    }
+  }
+  var h = loc.hash.slice(1).toLowerCase();
+  if ((h === "fr" || h === "en") && window.history.replaceState) window.history.replaceState(null, "", loc.pathname + loc.search);
+  apply(langOf(h) || browserLang());
+  window.addEventListener("hashchange", function () { var l = langOf(loc.hash); if (l) apply(l); });
+  document.addEventListener("DOMContentLoaded", function () {
+    apply(root.getAttribute("data-show"));
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) sw[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      apply(this.getAttribute("data-set-lang"));
+    });
+    var art = document.querySelector("[data-kamelo]");
+    var skins = document.querySelectorAll("[data-skin]");
+    for (var j = 0; j < skins.length; j++) skins[j].addEventListener("click", function () {
+      if (art) {
+        art.style.setProperty("--k-skin", this.getAttribute("data-skin"));
+        art.style.setProperty("--k-deep", this.getAttribute("data-deep"));
+        art.style.setProperty("--k-light", this.getAttribute("data-light"));
+      }
+      for (var k = 0; k < skins.length; k++) skins[k].setAttribute("aria-pressed", skins[k] === this ? "true" : "false");
+    });
+  });
+})();</script>
+</head>
+<body class="page-notfound">
+<a class="skip" href="#main"><span data-lang="fr">Aller au contenu</span><span data-lang="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="https://fox1304.github.io/kamelo-site/"><img src="https://fox1304.github.io/kamelo-site/favicon.svg" alt="" width="40" height="40"><span>Kamelo</span></a>
+    <nav class="nav" aria-label="Menu">
+      <ul>
+        <li data-lang="fr"><a href="https://fox1304.github.io/kamelo-site/index.html#fr-comment-ca-marche">Comment ça marche</a></li>
+        <li data-lang="fr"><a href="https://fox1304.github.io/kamelo-site/privacy.html#fr">Confidentialité</a></li>
+        <li data-lang="fr"><a href="https://fox1304.github.io/kamelo-site/support.html#fr">Aide</a></li>
+        <li data-lang="en" lang="en"><a href="https://fox1304.github.io/kamelo-site/index.html#en-how-it-works">How it works</a></li>
+        <li data-lang="en" lang="en"><a href="https://fox1304.github.io/kamelo-site/privacy.html#en">Privacy</a></li>
+        <li data-lang="en" lang="en"><a href="https://fox1304.github.io/kamelo-site/support.html#en">Help</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <a href="#fr" hreflang="fr" lang="fr" data-set-lang="fr" aria-label="Français">FR</a>
+      <a href="#en" hreflang="en" lang="en" data-set-lang="en" aria-label="English">EN</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap narrow center notfound">
+  <img class="notfound-art" src="https://fox1304.github.io/kamelo-site/favicon.svg" alt="" width="120" height="120">
+  <div data-lang="fr" lang="fr" id="fr">
+    <h1>Cette page s’est camouflée</h1>
+    <p>Même Kamelo ne la trouve pas. Elle a peut-être changé d’adresse.</p>
+    <p><a class="btn" href="https://fox1304.github.io/kamelo-site/#fr">Retour à l’accueil</a></p>
+  </div>
+  <div data-lang="en" lang="en" id="en">
+    <h1>This page is camouflaged</h1>
+    <p>Even Kamelo can’t find it. It may have moved.</p>
+    <p><a class="btn" href="https://fox1304.github.io/kamelo-site/#en">Back to the home page</a></p>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-block" data-lang="fr">
+      <nav aria-label="Liens utiles">
+        <ul class="footer-links">
+          <li><a href="https://fox1304.github.io/kamelo-site/privacy.html#fr">Confidentialité</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/terms.html#fr">Conditions d’utilisation</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/terms.html#fr-mentions-legales">Mentions légales</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/support.html#fr">Aide et contact</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/children.html#fr">Pour les enfants</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/press.html#fr">Presse</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Ce site n’utilise aucun cookie ni aucun traceur. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+    <div class="footer-block" data-lang="en" lang="en">
+      <nav aria-label="Useful links">
+        <ul class="footer-links">
+          <li><a href="https://fox1304.github.io/kamelo-site/privacy.html#en">Privacy</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/terms.html#en">Terms of use</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/terms.html#en-legal-notice">Legal notice</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/support.html#en">Help and contact</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/children.html#en">For children</a></li>
+          <li><a href="https://fox1304.github.io/kamelo-site/press.html#en">Press</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">This website uses no cookies and no trackers. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

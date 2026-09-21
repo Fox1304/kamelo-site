@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="fr" data-title-fr="Conditions d’utilisation · Kamelo" data-title-en="Terms of use · Kamelo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'sha256-I9BgKOawifnJGNiBx4F5HJiavsiwz4P4nHcMTh/zUJw='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Conditions d’utilisation · Kamelo</title>
+<meta name="description" content="Conditions d’utilisation de Kamelo : service, abonnement, IA, responsabilité, mentions légales. Kamelo terms of use in English.">
+<link rel="canonical" href="https://fox1304.github.io/kamelo-site/terms.html">
+<meta property="og:url" content="https://fox1304.github.io/kamelo-site/terms.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamelo">
+<meta property="og:title" content="Conditions d’utilisation · Kamelo">
+<meta property="og:description" content="Conditions d’utilisation de Kamelo : service, abonnement, IA, responsabilité, mentions légales. Kamelo terms of use in English.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF8EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>(function () {
+  var root = document.documentElement, loc = window.location;
+  function langOf(h) {
+    h = (h || "").replace(/^#/, "").toLowerCase();
+    if (h === "en" || h.slice(0, 3) === "en-") return "en";
+    if (h === "fr" || h.slice(0, 3) === "fr-") return "fr";
+    return null;
+  }
+  function browserLang() {
+    var list = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase().slice(0, 2);
+      if (l === "fr" || l === "en") return l;
+    }
+    return "fr";
+  }
+  function apply(lang) {
+    root.setAttribute("data-show", lang);
+    root.setAttribute("lang", lang);
+    var t = root.getAttribute("data-title-" + lang);
+    if (t) document.title = t;
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) {
+      if (sw[i].getAttribute("data-set-lang") === lang) sw[i].setAttribute("aria-current", "true");
+      else sw[i].removeAttribute("aria-current");
+    }
+  }
+  var h = loc.hash.slice(1).toLowerCase();
+  if ((h === "fr" || h === "en") && window.history.replaceState) window.history.replaceState(null, "", loc.pathname + loc.search);
+  apply(langOf(h) || browserLang());
+  window.addEventListener("hashchange", function () { var l = langOf(loc.hash); if (l) apply(l); });
+  document.addEventListener("DOMContentLoaded", function () {
+    apply(root.getAttribute("data-show"));
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) sw[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      apply(this.getAttribute("data-set-lang"));
+    });
+    var art = document.querySelector("[data-kamelo]");
+    var skins = document.querySelectorAll("[data-skin]");
+    for (var j = 0; j < skins.length; j++) skins[j].addEventListener("click", function () {
+      if (art) {
+        art.style.setProperty("--k-skin", this.getAttribute("data-skin"));
+        art.style.setProperty("--k-deep", this.getAttribute("data-deep"));
+        art.style.setProperty("--k-light", this.getAttribute("data-light"));
+      }
+      for (var k = 0; k < skins.length; k++) skins[k].setAttribute("aria-pressed", skins[k] === this ? "true" : "false");
+    });
+  });
+})();</script>
+</head>
+<body class="page-terms">
+<a class="skip" href="#main"><span data-lang="fr">Aller au contenu</span><span data-lang="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="40" height="40"><span>Kamelo</span></a>
+    <nav class="nav" aria-label="Menu">
+      <ul>
+        <li data-lang="fr"><a href="index.html#fr-comment-ca-marche">Comment ça marche</a></li>
+        <li data-lang="fr"><a href="privacy.html#fr">Confidentialité</a></li>
+        <li data-lang="fr"><a href="support.html#fr">Aide</a></li>
+        <li data-lang="en" lang="en"><a href="index.html#en-how-it-works">How it works</a></li>
+        <li data-lang="en" lang="en"><a href="privacy.html#en">Privacy</a></li>
+        <li data-lang="en" lang="en"><a href="support.html#en">Help</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <a href="#fr" hreflang="fr" lang="fr" data-set-lang="fr" aria-label="Français">FR</a>
+      <a href="#en" hreflang="en" lang="en" data-set-lang="en" aria-label="English">EN</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap narrow legal">
+<article class="doc" data-lang="fr" lang="fr" id="fr">
+  <header class="doc-head">
+    <p class="eyebrow">Kamelo</p>
+    <h1 id="fr-top">Conditions d’utilisation</h1>
+    <p class="doc-meta"><em>Version 1.0 — 21 septembre 2026</em></p>
+  </header>
+<p>Ces conditions encadrent l’utilisation de l’application Kamelo. Nous les avons écrites pour qu’elles soient lues : si un point n’est pas clair, écrivez-nous à <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a>.</p>
+<nav class="toc" aria-labelledby="toc-fr">
+  <h2 id="toc-fr" class="toc-title">Sommaire</h2>
+  <ol>
+    <li><a href="#fr-qui-propose-kamelo">1. Qui propose Kamelo ?</a></li>
+    <li><a href="#fr-acceptation">2. Acceptation</a></li>
+    <li><a href="#fr-le-service">3. Le service</a></li>
+    <li><a href="#fr-qui-peut-utiliser-kamelo">4. Qui peut utiliser Kamelo ?</a></li>
+    <li><a href="#fr-compte-espace-parent-et-code-parent">5. Compte, espace parent et code parent</a></li>
+    <li><a href="#fr-version-gratuite">6. Version gratuite</a></li>
+    <li><a href="#fr-kamelo-premium-abonnement-essai-renouvellement-et-resiliation">7. Kamelo Premium : abonnement, essai, renouvellement et résiliation</a></li>
+    <li><a href="#fr-intelligence-artificielle-ce-que-kamelo-fait-et-ne-fait-pas">8. Intelligence artificielle : ce que Kamelo fait et ne fait pas</a></li>
+    <li><a href="#fr-vos-contenus">9. Vos contenus</a></li>
+    <li><a href="#fr-regles-d-utilisation">10. Règles d’utilisation</a></li>
+    <li><a href="#fr-propriete-intellectuelle">11. Propriété intellectuelle</a></li>
+    <li><a href="#fr-disponibilite-et-evolutions-du-service">12. Disponibilité et évolutions du service</a></li>
+    <li><a href="#fr-responsabilite">13. Responsabilité</a></li>
+    <li><a href="#fr-suspension-et-fin-d-utilisation">14. Suspension et fin d’utilisation</a></li>
+    <li><a href="#fr-donnees-personnelles">15. Données personnelles</a></li>
+    <li><a href="#fr-modification-des-conditions">16. Modification des conditions</a></li>
+    <li><a href="#fr-droit-applicable-et-litiges">17. Droit applicable et litiges</a></li>
+    <li><a href="#fr-contact">18. Contact</a></li>
+    <li><a href="#fr-mentions-legales">19. Mentions légales</a></li>
+  </ol>
+</nav>
+<section aria-labelledby="fr-qui-propose-kamelo">
+<h2 id="fr-qui-propose-kamelo">1. Qui propose Kamelo ?</h2>
+<p>Kamelo est édité par Thomas Sobstyl, développeur indépendant établi en France (« nous »). Les informations légales complètes figurent dans les mentions légales, à la fin de cette page.</p>
+</section>
+<section aria-labelledby="fr-acceptation">
+<h2 id="fr-acceptation">2. Acceptation</h2>
+<p>En utilisant Kamelo, vous acceptez ces conditions et reconnaissez avoir pris connaissance de notre <a href="privacy.html#fr">politique de confidentialité</a>. Si vous avez téléchargé Kamelo sur l’App Store, le contrat de licence standard d’Apple pour les applications (« Licensed Application End User License Agreement ») s’applique également ; sur Google Play, les conditions de Google Play régissent votre relation avec Google. Apple et Google ne sont pas parties à ces conditions : nous sommes seuls responsables de Kamelo, de son contenu, de sa maintenance et de son support.</p>
+</section>
+<section aria-labelledby="fr-le-service">
+<h2 id="fr-le-service">3. Le service</h2>
+<p>Kamelo transforme les devoirs du soir d’un enfant de 6 à 11 ans en courtes séances d’entraînement :</p>
+<ul>
+  <li>dans l’espace parent, vous photographiez ou importez la consigne ou la leçon ; une intelligence artificielle la lit et propose des exercices (dictée et listes de mots, mots invariables, tables, calcul, nombres, conjugaison, poésie, quiz de leçon, vocabulaire) ; vous les vérifiez, les corrigez si besoin et les confirmez ;</li>
+  <li>dans l’espace enfant, votre enfant s’entraîne avec Kamelo, le caméléon, sans publicité et sans achat.</li>
+</ul>
+<p>Kamelo est un outil d’entraînement : il ne fait pas les devoirs à la place de votre enfant, ne donne pas de note et ne remplace ni l’enseignant, ni vous.</p>
+</section>
+<section aria-labelledby="fr-qui-peut-utiliser-kamelo">
+<h2 id="fr-qui-peut-utiliser-kamelo">4. Qui peut utiliser Kamelo ?</h2>
+<p>Kamelo s’adresse aux parents et aux adultes responsables d’un enfant (« vous »), qui doivent être majeurs. Les enfants n’ont pas de compte : ils utilisent l’espace enfant sous votre responsabilité. Kamelo est réservé à un usage familial et non commercial ; il n’est pas conçu pour une utilisation en classe.</p>
+</section>
+<section aria-labelledby="fr-compte-espace-parent-et-code-parent">
+<h2 id="fr-compte-espace-parent-et-code-parent">5. Compte, espace parent et code parent</h2>
+<ul>
+  <li>Aucun compte n’est obligatoire : par défaut, les données de votre famille sont rattachées à votre appareil. Vous pouvez vous connecter (« Se connecter avec Apple » ou lien de connexion reçu par e-mail) pour sauvegarder vos données, les retrouver sur un autre appareil ou restaurer vos achats. Sans connexion, la perte ou la réinitialisation de l’appareil peut entraîner la perte de ces données.</li>
+  <li>L’espace parent est protégé par un code à 6 chiffres. Gardez-le pour vous : il protège les réglages, les achats, les liens externes et les consentements. En cas d’oubli, l’application vous propose une vérification adulte avant de choisir un nouveau code.</li>
+  <li>Vous êtes responsable de l’usage de Kamelo sur vos appareils et des informations que vous y saisissez.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-version-gratuite">
+<h2 id="fr-version-gratuite">6. Version gratuite</h2>
+<p>Kamelo est gratuit, sans publicité, avec :</p>
+<ul>
+  <li>3 scans de devoirs par semaine (du lundi au dimanche, selon le fuseau horaire de votre famille) ;</li>
+  <li>1 profil d’enfant ;</li>
+  <li>la reprise illimitée des exercices déjà créés ;</li>
+  <li>la saisie manuelle des devoirs.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-kamelo-premium-abonnement-essai-renouvellement-et-resiliation">
+<h2 id="fr-kamelo-premium-abonnement-essai-renouvellement-et-resiliation">7. Kamelo Premium : abonnement, essai, renouvellement et résiliation</h2>
+<ul>
+  <li><strong>Contenu</strong> : les avantages décrits dans l’application au moment de l’achat, notamment les scans illimités, jusqu’à 3 profils d’enfants et le suivi des progrès.</li>
+  <li><strong>Formules</strong> : abonnement annuel ou mensuel, à renouvellement automatique. Les prix sont affichés dans l’application avant l’achat, toutes taxes comprises, dans la devise de votre store.</li>
+  <li><strong>Essai gratuit</strong> : l’abonnement annuel peut comprendre un essai gratuit de 7 jours, une seule fois, selon les règles d’éligibilité de votre store. L’essai commence lorsque vous choisissez l’offre. Si vous ne résiliez pas avant la fin de l’essai (sur l’App Store, au moins 24 heures avant), l’abonnement annuel démarre et vous est facturé.</li>
+  <li><strong>Paiement</strong> : le paiement passe par votre compte App Store ou Google Play, qui encaisse le prix et gère la facturation. Nous n’avons jamais accès à vos moyens de paiement.</li>
+  <li><strong>Renouvellement</strong> : l’abonnement se renouvelle automatiquement pour la même durée, au prix alors en vigueur, sauf résiliation avant la fin de la période en cours (sur l’App Store, au moins 24 heures avant). Le renouvellement est facturé dans les 24 heures qui précèdent la fin de la période. Pour l’abonnement annuel, vous êtes informé de la possibilité de ne pas le reconduire au plus tôt trois mois et au plus tard un mois avant son échéance (article L.215-1 du Code de la consommation) <mark class="todo">[FOUNDER TO CONFIRM]</mark>.</li>
+  <li><strong>Résiliation</strong> : à tout moment et en quelques clics (article L.215-1-1 du Code de la consommation), depuis les réglages de votre compte App Store (Réglages › votre nom › Abonnements) ou Google Play (Paiements et abonnements › Abonnements), ou depuis Kamelo : espace parent › Réglages › Abonnement › « Gérer / résilier mon abonnement ». La résiliation prend effet à la fin de la période en cours : vous gardez Premium jusque-là, puis Kamelo repasse en version gratuite, et vos exercices et progrès sont conservés.</li>
+  <li><strong>Prix</strong> : si nous modifions le prix, votre store vous en informe à l’avance et, lorsque ses règles ou la loi l’exigent, vous demande votre accord ; vous pouvez résilier avant que le nouveau prix ne s’applique.</li>
+  <li><strong>Remboursement et rétractation</strong> : l’achat étant conclu auprès d’Apple ou de Google, les demandes de remboursement et le droit de rétractation dont vous bénéficiez en tant que consommateur (14 jours dans l’Union européenne et au Royaume-Uni, sous réserve des exceptions prévues par la loi) s’exercent auprès d’eux, selon leurs conditions : <a href="https://reportaproblem.apple.com">Apple</a> ou <a href="https://support.google.com/googleplay/answer/2479637">Google Play</a>. Nous ne pouvons pas rembourser nous-mêmes, mais nous vous aiderons volontiers dans vos démarches.</li>
+  <li><strong>Famille</strong> : le partage familial d’Apple n’est pas proposé ; l’abonnement bénéficie à votre famille Kamelo (jusqu’à 3 profils d’enfants). Pour en profiter sur un autre appareil, connectez-vous au même compte ou utilisez « Restaurer mes achats ».</li>
+  <li><strong>Suppression du compte</strong> : supprimer votre compte Kamelo ne résilie pas l’abonnement souscrit auprès de votre store. Pensez à le résilier.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-intelligence-artificielle-ce-que-kamelo-fait-et-ne-fait-pas">
+<h2 id="fr-intelligence-artificielle-ce-que-kamelo-fait-et-ne-fait-pas">8. Intelligence artificielle : ce que Kamelo fait et ne fait pas</h2>
+<ul>
+  <li>Kamelo utilise un modèle d’intelligence artificielle, Claude, fourni par Anthropic, pour lire la consigne ou la leçon photographiée, reconnaître le type d’exercice, préparer son contenu et vérifier que les textes destinés à votre enfant sont adaptés. Cette lecture n’a lieu qu’avec votre accord, que vous pouvez retirer à tout moment.</li>
+  <li>L’IA peut se tromper (écriture difficile à lire, photo floue, consigne ambiguë) : c’est pourquoi vous vérifiez et confirmez chaque exercice avant que votre enfant le voie. En cas de doute, la consigne de l’enseignant fait foi.</li>
+  <li>Les quiz de leçon sont générés par l’IA à partir de la leçon photographiée, et chaque question cite la phrase de la leçon dont elle provient. Ils portent la mention « Questions générées par une IA et relues par un parent » : vous devez les relire avant de les proposer.</li>
+  <li>Kamelo ne fait pas les devoirs à la place de votre enfant, ne le note pas et ne prend aucune décision à son sujet. Kamelo, le personnage, ne discute pas librement : toutes ses phrases sont écrites à l’avance.</li>
+  <li>Vous pouvez nous signaler un contenu inadapté grâce au bouton « Signaler un problème ».</li>
+</ul>
+</section>
+<section aria-labelledby="fr-vos-contenus">
+<h2 id="fr-vos-contenus">9. Vos contenus</h2>
+<ul>
+  <li>Les photos, textes et informations que vous ajoutez restent les vôtres. Vous nous autorisez seulement à les héberger et à les traiter pour vous fournir le service, pendant les durées prévues par la politique de confidentialité.</li>
+  <li>Lorsque vous nous demandez d’apprendre un nouveau type d’exercice, vous nous autorisez en plus à étudier la photo pendant 30 jours pour apprendre ce type d’exercice à Kamelo. Nous n’en publions ni le contenu, ni les données personnelles.</li>
+  <li>Vous n’ajoutez que des documents que vous pouvez utiliser pour l’usage privé de votre famille (devoirs, leçons, listes de mots), et vous évitez de photographier des visages ou des documents personnels.</li>
+  <li>Nous n’utilisons pas vos contenus à des fins publicitaires, et nous ne les utilisons pas pour entraîner des modèles d’intelligence artificielle.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-regles-d-utilisation">
+<h2 id="fr-regles-d-utilisation">10. Règles d’utilisation</h2>
+<p>Vous vous engagez à ne pas :</p>
+<ul>
+  <li>utiliser Kamelo à des fins commerciales, en classe ou pour des personnes extérieures à votre famille ;</li>
+  <li>ajouter des contenus illicites, violents, haineux, à caractère sexuel ou portant atteinte aux droits d’autrui ;</li>
+  <li>contourner les limites du service (par exemple la limite de scans de la version gratuite), ses protections ou le code parent, ni tenter d’accéder aux données d’une autre famille ;</li>
+  <li>détourner l’IA de son usage, par exemple en photographiant des instructions destinées à la manipuler, ou l’utiliser pour autre chose que des devoirs ;</li>
+  <li>copier, modifier ou décompiler l’application, ou en extraire le contenu, sauf dans les cas autorisés par la loi ;</li>
+  <li>perturber le fonctionnement du service (envois automatisés, surcharge, attaque).</li>
+</ul>
+</section>
+<section aria-labelledby="fr-propriete-intellectuelle">
+<h2 id="fr-propriete-intellectuelle">11. Propriété intellectuelle</h2>
+<ul>
+  <li>L’application, le nom et le personnage de Kamelo, les illustrations, animations, sons, textes et le code sont protégés et appartiennent à Thomas Sobstyl, ou sont utilisés avec l’autorisation de leurs titulaires. Vous disposez d’un droit personnel, non exclusif et non cessible d’utiliser l’application pour l’usage privé de votre famille, pendant la durée de votre utilisation.</li>
+  <li>Certains contenus proviennent de tiers et restent soumis à leur licence : poèmes du domaine public, listes officielles de mots (dont les listes du ministère britannique de l’Éducation : « Contains public sector information licensed under the Open Government Licence v3.0. »), listes de mots Dolch et Fry, polices sous licence SIL Open Font License. Le détail figure dans l’application (Réglages › Crédits et licences).</li>
+</ul>
+</section>
+<section aria-labelledby="fr-disponibilite-et-evolutions-du-service">
+<h2 id="fr-disponibilite-et-evolutions-du-service">12. Disponibilité et évolutions du service</h2>
+<ul>
+  <li>Nous faisons de notre mieux pour que Kamelo fonctionne en continu, mais des interruptions peuvent survenir (maintenance, panne d’un prestataire, absence de connexion). Les exercices déjà créés restent utilisables hors connexion ; les scans nécessitent une connexion.</li>
+  <li>Kamelo évolue : nous pouvons ajouter, modifier ou retirer des fonctionnalités, notamment pour l’améliorer, le sécuriser ou respecter la loi et les règles des stores. Si une modification réduit de façon plus que mineure votre utilisation d’un service payant, nous vous prévenons à l’avance et vous pouvez résilier sans frais dans les 30 jours.</li>
+  <li>Pendant la phase de test (bêta), certaines fonctions peuvent être incomplètes ou changer.</li>
+  <li>Si nous arrêtons définitivement Kamelo, nous vous prévenons au moins 30 jours à l’avance, vous pouvez exporter vos données, et la partie non utilisée d’un abonnement payé vous est remboursée, selon les modalités de votre store.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-responsabilite">
+<h2 id="fr-responsabilite">13. Responsabilité</h2>
+<ul>
+  <li>Nous fournissons Kamelo avec soin et répondons des dommages causés par un manquement à nos obligations, dans les conditions du droit commun.</li>
+  <li>Notre responsabilité ne peut pas être engagée en cas de force majeure, ni lorsque le dommage résulte de votre fait ou du fait d’un tiers (par exemple une panne de votre store ou de votre réseau).</li>
+  <li>Rien dans ces conditions ne limite les droits que vous tenez de la loi en tant que consommateur, notamment la garantie légale de conformité des contenus et services numériques (articles L.224-25-12 et suivants du Code de la consommation), ni notre responsabilité en cas de faute lourde ou intentionnelle ou de dommage corporel.</li>
+  <li>Kamelo aide votre enfant à s’entraîner, mais les résultats scolaires dépendent de nombreux facteurs : nous ne promettons pas de résultat particulier.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-suspension-et-fin-d-utilisation">
+<h2 id="fr-suspension-et-fin-d-utilisation">14. Suspension et fin d’utilisation</h2>
+<ul>
+  <li>Vous pouvez cesser d’utiliser Kamelo et supprimer votre compte à tout moment : Réglages › Confidentialité › « Supprimer mon compte et toutes les données ».</li>
+  <li>En cas de manquement grave à ces conditions (par exemple une attaque contre le service ou une tentative d’accès aux données d’autrui), nous pouvons suspendre l’accès concerné, en vous prévenant au préalable lorsque c’est possible. Vous pouvez nous écrire pour contester cette décision.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-donnees-personnelles">
+<h2 id="fr-donnees-personnelles">15. Données personnelles</h2>
+<p>Le traitement de vos données et de celles de votre enfant est décrit dans la <a href="privacy.html#fr">politique de confidentialité</a>. Une version pour les enfants, <a href="children.html#fr">Kamelo et toi</a>, l’explique avec des mots simples.</p>
+</section>
+<section aria-labelledby="fr-modification-des-conditions">
+<h2 id="fr-modification-des-conditions">16. Modification des conditions</h2>
+<p>Nous pouvons modifier ces conditions, par exemple pour suivre l’évolution du service ou de la loi. Nous vous informons de toute modification importante dans l’application au moins 30 jours avant son entrée en vigueur. Si vous la refusez, vous pouvez résilier votre abonnement et supprimer votre compte sans frais.</p>
+</section>
+<section aria-labelledby="fr-droit-applicable-et-litiges">
+<h2 id="fr-droit-applicable-et-litiges">17. Droit applicable et litiges</h2>
+<ul>
+  <li>Ces conditions sont soumises au droit français. Si vous êtes un consommateur résidant dans un autre pays, vous conservez la protection des dispositions impératives de la loi de votre pays de résidence.</li>
+  <li>En cas de difficulté, écrivez-nous d’abord : la plupart des problèmes se règlent rapidement.</li>
+  <li>Médiation : si notre réponse ne vous satisfait pas, vous pouvez recourir gratuitement à un médiateur de la consommation (articles L.612-1 et suivants du Code de la consommation) : <mark class="todo">[FOUNDER TO CONFIRM]</mark>.</li>
+  <li>Tribunaux : à défaut d’accord, le litige peut être porté devant les juridictions françaises compétentes. En tant que consommateur, vous pouvez aussi saisir la juridiction du lieu où vous demeuriez lors de la conclusion du contrat ou de la survenance du fait dommageable (article R.631-3 du Code de la consommation) ; si vous résidez hors de France, vous pouvez saisir les juridictions de votre pays lorsque la loi vous le permet.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-contact">
+<h2 id="fr-contact">18. Contact</h2>
+<ul>
+  <li>E-mail : <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></li>
+  <li>Point de contact unique au titre du règlement européen sur les services numériques (DSA, articles 11 et 12), pour les autorités comme pour les utilisateurs : même adresse ; langues acceptées : français et anglais.</li>
+</ul>
+</section>
+<section aria-labelledby="fr-mentions-legales">
+<h2 id="fr-mentions-legales">19. Mentions légales</h2>
+<ul>
+  <li>Éditeur : Thomas Sobstyl, développeur indépendant (personne physique). Statut et numéro SIREN : <mark class="todo">[FOUNDER TO CONFIRM]</mark></li>
+  <li>Adresse postale et téléphone : <mark class="todo">[FOUNDER TO CONFIRM]</mark></li>
+  <li>E-mail : <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></li>
+  <li>Directeur de la publication : Thomas Sobstyl</li>
+  <li>Hébergement du site : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</li>
+  <li>Hébergement des données de l’application : Supabase, Inc., sur des serveurs d’Amazon Web Services situés à Paris (région eu-west-3).</li>
+</ul>
+</section>
+</article>
+<article class="doc" data-lang="en" lang="en" id="en">
+  <header class="doc-head">
+    <p class="eyebrow">Kamelo</p>
+    <h1 id="en-top">Terms of use</h1>
+    <p class="doc-meta"><em>Version 1.0 — 21 September 2026</em></p>
+  </header>
+<p>These terms govern your use of the Kamelo app. We wrote them to be read: if anything is unclear, write to us at <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a>.</p>
+<nav class="toc" aria-labelledby="toc-en">
+  <h2 id="toc-en" class="toc-title">Contents</h2>
+  <ol>
+    <li><a href="#en-who-provides-kamelo">1. Who provides Kamelo</a></li>
+    <li><a href="#en-acceptance">2. Acceptance</a></li>
+    <li><a href="#en-the-service">3. The service</a></li>
+    <li><a href="#en-who-can-use-kamelo">4. Who can use Kamelo</a></li>
+    <li><a href="#en-account-parent-space-and-parent-code">5. Account, parent space and parent code</a></li>
+    <li><a href="#en-free-version">6. Free version</a></li>
+    <li><a href="#en-kamelo-premium-subscription-trial-renewal-and-cancellation">7. Kamelo Premium: subscription, trial, renewal and cancellation</a></li>
+    <li><a href="#en-artificial-intelligence-what-kamelo-does-and-does-not-do">8. Artificial intelligence: what Kamelo does and does not do</a></li>
+    <li><a href="#en-your-content">9. Your content</a></li>
+    <li><a href="#en-acceptable-use">10. Acceptable use</a></li>
+    <li><a href="#en-intellectual-property">11. Intellectual property</a></li>
+    <li><a href="#en-availability-and-changes-to-the-service">12. Availability and changes to the service</a></li>
+    <li><a href="#en-liability">13. Liability</a></li>
+    <li><a href="#en-suspension-and-ending-your-use">14. Suspension and ending your use</a></li>
+    <li><a href="#en-personal-data">15. Personal data</a></li>
+    <li><a href="#en-changes-to-these-terms">16. Changes to these terms</a></li>
+    <li><a href="#en-governing-law-and-disputes">17. Governing law and disputes</a></li>
+    <li><a href="#en-contact">18. Contact</a></li>
+    <li><a href="#en-legal-notice">19. Legal notice</a></li>
+  </ol>
+</nav>
+<section aria-labelledby="en-who-provides-kamelo">
+<h2 id="en-who-provides-kamelo">1. Who provides Kamelo</h2>
+<p>Kamelo is published by Thomas Sobstyl, an independent developer based in France (“we”). Full legal information is in the legal notice at the end of this page.</p>
+</section>
+<section aria-labelledby="en-acceptance">
+<h2 id="en-acceptance">2. Acceptance</h2>
+<p>By using Kamelo, you accept these terms and confirm that you have read our <a href="privacy.html#en">privacy policy</a>. If you downloaded Kamelo from the App Store, Apple’s standard Licensed Application End User License Agreement also applies; on Google Play, the Google Play terms govern your relationship with Google. Apple and Google are not parties to these terms: we alone are responsible for Kamelo, its content, maintenance and support.</p>
+</section>
+<section aria-labelledby="en-the-service">
+<h2 id="en-the-service">3. The service</h2>
+<p>Kamelo turns the homework of a child aged 6 to 11 into short practice sessions:</p>
+<ul>
+  <li>in the parent space, you photograph or import the instruction or the lesson; an artificial intelligence reads it and suggests exercises (dictation and word lists, sight words, times tables, arithmetic, numbers, conjugation, poems, lesson quizzes, vocabulary); you check them, correct them if needed and confirm them;</li>
+  <li>in the child space, your child practises with Kamelo the chameleon, with no advertising and no purchases.</li>
+</ul>
+<p>Kamelo is a practice tool: it does not do the homework for your child, gives no marks and replaces neither the teacher nor you.</p>
+</section>
+<section aria-labelledby="en-who-can-use-kamelo">
+<h2 id="en-who-can-use-kamelo">4. Who can use Kamelo</h2>
+<p>Kamelo is for parents and adults responsible for a child (“you”), who must be adults. Children have no account: they use the child space under your responsibility. Kamelo is for private, non-commercial family use; it is not designed for classroom use.</p>
+</section>
+<section aria-labelledby="en-account-parent-space-and-parent-code">
+<h2 id="en-account-parent-space-and-parent-code">5. Account, parent space and parent code</h2>
+<ul>
+  <li>No account is required: by default, your family’s data is attached to your device. You can sign in (“Sign in with Apple” or a sign-in link sent by email) to back up your data, find it on another device or restore your purchases. Without signing in, losing or resetting the device may mean losing that data.</li>
+  <li>The parent space is protected by a 6-digit code. Keep it to yourself: it protects settings, purchases, external links and consents. If you forget it, the app offers an adult check before you choose a new code.</li>
+  <li>You are responsible for the use of Kamelo on your devices and for the information you enter.</li>
+</ul>
+</section>
+<section aria-labelledby="en-free-version">
+<h2 id="en-free-version">6. Free version</h2>
+<p>Kamelo is free, with no advertising, and includes:</p>
+<ul>
+  <li>3 homework scans per week (Monday to Sunday, in your family’s time zone);</li>
+  <li>1 child profile;</li>
+  <li>unlimited replay of exercises already created;</li>
+  <li>manual entry of homework.</li>
+</ul>
+</section>
+<section aria-labelledby="en-kamelo-premium-subscription-trial-renewal-and-cancellation">
+<h2 id="en-kamelo-premium-subscription-trial-renewal-and-cancellation">7. Kamelo Premium: subscription, trial, renewal and cancellation</h2>
+<ul>
+  <li><strong>What you get</strong>: the benefits described in the app at the time of purchase, including unlimited scans, up to 3 child profiles and progress tracking.</li>
+  <li><strong>Plans</strong>: annual or monthly subscription, renewing automatically. Prices are shown in the app before purchase, including taxes, in your store’s currency.</li>
+  <li><strong>Free trial</strong>: the annual subscription may include a 7-day free trial, once, subject to your store’s eligibility rules. The trial starts when you choose the offer. If you do not cancel before the end of the trial (on the App Store, at least 24 hours before), the annual subscription starts and you are charged.</li>
+  <li><strong>Payment</strong>: payment goes through your App Store or Google Play account, which collects the price and handles billing. We never have access to your payment details.</li>
+  <li><strong>Renewal</strong>: the subscription renews automatically for the same period at the then-current price, unless you cancel before the end of the current period (on the App Store, at least 24 hours before). Renewal is charged within the 24 hours before the end of the period. For the annual subscription, French consumers are told that they can choose not to renew no earlier than three months and no later than one month before it ends (Article L.215-1 of the French Consumer Code) <mark class="todo">[FOUNDER TO CONFIRM]</mark>.</li>
+  <li><strong>Cancellation</strong>: at any time and in a few taps, from your App Store account settings (Settings › your name › Subscriptions) or Google Play (Payments &amp; subscriptions › Subscriptions), or from Kamelo: parent space › Settings › Subscription › “Manage / cancel subscription”. Cancellation takes effect at the end of the current period: you keep Premium until then, then Kamelo returns to the free version, and your exercises and progress are kept.</li>
+  <li><strong>Price</strong>: if we change the price, your store tells you in advance and, where its rules or the law require it, asks for your agreement; you can cancel before the new price applies.</li>
+  <li><strong>Refunds and withdrawal</strong>: because the purchase is made with Apple or Google, refund requests and the right of withdrawal you have as a consumer (14 days in the European Union and the United Kingdom, subject to the exceptions provided by law) are handled by them, under their terms: <a href="https://reportaproblem.apple.com">Apple</a> or <a href="https://support.google.com/googleplay/answer/2479637">Google Play</a>. We cannot issue refunds ourselves, but we will gladly help you with the process.</li>
+  <li><strong>Family</strong>: Apple Family Sharing is not offered; the subscription covers your Kamelo family (up to 3 child profiles). To use it on another device, sign in to the same account or use “Restore purchases”.</li>
+  <li><strong>Deleting your account</strong>: deleting your Kamelo account does not cancel a subscription bought through your store. Remember to cancel it.</li>
+</ul>
+</section>
+<section aria-labelledby="en-artificial-intelligence-what-kamelo-does-and-does-not-do">
+<h2 id="en-artificial-intelligence-what-kamelo-does-and-does-not-do">8. Artificial intelligence: what Kamelo does and does not do</h2>
+<ul>
+  <li>Kamelo uses an artificial intelligence model, Claude, provided by Anthropic, to read the photographed instruction or lesson, recognise the exercise type, prepare its content and check that texts meant for your child are suitable. This reading only happens with your consent, which you can withdraw at any time.</li>
+  <li>The AI can make mistakes (hard-to-read handwriting, blurry photo, ambiguous instruction): that is why you check and confirm every exercise before your child sees it. If in doubt, the teacher’s instruction prevails.</li>
+  <li>Lesson quizzes are generated by the AI from the photographed lesson, and each question quotes the sentence of the lesson it comes from. They carry the label “Questions generated by AI and reviewed by a parent”: you must review them before assigning them.</li>
+  <li>Kamelo does not do your child’s homework, does not mark your child and makes no decision about them. Kamelo, the character, does not chat freely: all its lines are written in advance.</li>
+  <li>You can report unsuitable content with the “Report a problem” button.</li>
+</ul>
+</section>
+<section aria-labelledby="en-your-content">
+<h2 id="en-your-content">9. Your content</h2>
+<ul>
+  <li>The photos, texts and information you add remain yours. You only allow us to host and process them to provide the service, for the periods set out in the privacy policy.</li>
+  <li>When you ask us to learn a new exercise type, you also allow us to review the photo for 30 days in order to teach Kamelo that exercise type. We never publish its content or personal data.</li>
+  <li>You only add documents you may use for your family’s private use (homework, lessons, word lists), and you avoid photographing faces or personal documents.</li>
+  <li>We do not use your content for advertising, and we do not use it to train artificial intelligence models.</li>
+</ul>
+</section>
+<section aria-labelledby="en-acceptable-use">
+<h2 id="en-acceptable-use">10. Acceptable use</h2>
+<p>You agree not to:</p>
+<ul>
+  <li>use Kamelo for commercial purposes, in a classroom or for people outside your family;</li>
+  <li>add content that is unlawful, violent, hateful, sexual or that infringes the rights of others;</li>
+  <li>get around the service’s limits (for example the free version’s scan limit), its protections or the parent code, or try to access another family’s data;</li>
+  <li>misuse the AI, for example by photographing instructions designed to manipulate it, or use it for anything other than homework;</li>
+  <li>copy, modify or decompile the app, or extract its content, except where the law allows it;</li>
+  <li>disrupt the service (automated submissions, overloading, attacks).</li>
+</ul>
+</section>
+<section aria-labelledby="en-intellectual-property">
+<h2 id="en-intellectual-property">11. Intellectual property</h2>
+<ul>
+  <li>The app, the name and character of Kamelo, the illustrations, animations, sounds, texts and code are protected and belong to Thomas Sobstyl, or are used with their owners’ permission. You have a personal, non-exclusive and non-transferable right to use the app for your family’s private use, for as long as you use it.</li>
+  <li>Some content comes from third parties and remains subject to its licence: public-domain poems, official word lists (including the UK Department for Education lists: “Contains public sector information licensed under the Open Government Licence v3.0.”), the Dolch and Fry word lists, and fonts under the SIL Open Font License. Details are in the app (Settings › Credits and licences).</li>
+</ul>
+</section>
+<section aria-labelledby="en-availability-and-changes-to-the-service">
+<h2 id="en-availability-and-changes-to-the-service">12. Availability and changes to the service</h2>
+<ul>
+  <li>We do our best to keep Kamelo running, but interruptions can happen (maintenance, a provider outage, no connection). Exercises already created keep working offline; scans need a connection.</li>
+  <li>Kamelo evolves: we may add, change or remove features, in particular to improve it, keep it secure or comply with the law and store rules. If a change reduces your use of a paid service more than slightly, we will tell you in advance and you may cancel free of charge within 30 days.</li>
+  <li>During the test phase (beta), some features may be incomplete or change.</li>
+  <li>If we permanently close Kamelo, we will tell you at least 30 days in advance, you will be able to export your data, and the unused part of a paid subscription will be refunded through your store’s process.</li>
+</ul>
+</section>
+<section aria-labelledby="en-liability">
+<h2 id="en-liability">13. Liability</h2>
+<ul>
+  <li>We provide Kamelo with care and are liable for damage caused by a failure to meet our obligations, under the general law.</li>
+  <li>We are not liable in cases of force majeure, or where the damage results from your own actions or those of a third party (for example an outage of your store or network).</li>
+  <li>Nothing in these terms limits the rights you have by law as a consumer, in particular the legal guarantee of conformity for digital content and services (Articles L.224-25-12 et seq. of the French Consumer Code; in the UK, the Consumer Rights Act 2015), nor our liability for gross negligence, wilful misconduct or personal injury.</li>
+  <li>Kamelo helps your child practise, but school results depend on many factors: we do not promise any particular result.</li>
+</ul>
+</section>
+<section aria-labelledby="en-suspension-and-ending-your-use">
+<h2 id="en-suspension-and-ending-your-use">14. Suspension and ending your use</h2>
+<ul>
+  <li>You can stop using Kamelo and delete your account at any time: Settings › Privacy › “Delete my account and all data”.</li>
+  <li>If these terms are seriously breached (for example an attack on the service or an attempt to access someone else’s data), we may suspend the access concerned, warning you beforehand where possible. You can write to us to contest this decision.</li>
+</ul>
+</section>
+<section aria-labelledby="en-personal-data">
+<h2 id="en-personal-data">15. Personal data</h2>
+<p>How we process your data and your child’s data is described in the <a href="privacy.html#en">privacy policy</a>. A version for children, <a href="children.html#en">Kamelo and you</a>, explains it in simple words.</p>
+</section>
+<section aria-labelledby="en-changes-to-these-terms">
+<h2 id="en-changes-to-these-terms">16. Changes to these terms</h2>
+<p>We may change these terms, for example to follow changes to the service or the law. We will tell you about any significant change in the app at least 30 days before it takes effect. If you do not accept it, you can cancel your subscription and delete your account free of charge.</p>
+</section>
+<section aria-labelledby="en-governing-law-and-disputes">
+<h2 id="en-governing-law-and-disputes">17. Governing law and disputes</h2>
+<ul>
+  <li>These terms are governed by French law. If you are a consumer living in another country, you keep the protection of the mandatory provisions of the law of your country of residence.</li>
+  <li>If something goes wrong, please write to us first: most problems are solved quickly.</li>
+  <li>Mediation: if our answer does not satisfy you, you can use a consumer mediator free of charge (Articles L.612-1 et seq. of the French Consumer Code): <mark class="todo">[FOUNDER TO CONFIRM]</mark>.</li>
+  <li>Courts: failing agreement, the dispute may be brought before the competent French courts. As a consumer, you may also go to the court of the place where you lived when the contract was concluded or when the damage occurred (Article R.631-3 of the French Consumer Code); if you live outside France, you may go to the courts of your country where the law allows it.</li>
+</ul>
+</section>
+<section aria-labelledby="en-contact">
+<h2 id="en-contact">18. Contact</h2>
+<ul>
+  <li>Email: <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></li>
+  <li>Single point of contact under the EU Digital Services Act (DSA, Articles 11 and 12), for authorities and users alike: same address; languages accepted: French and English.</li>
+</ul>
+</section>
+<section aria-labelledby="en-legal-notice">
+<h2 id="en-legal-notice">19. Legal notice</h2>
+<ul>
+  <li>Publisher: Thomas Sobstyl, independent developer (natural person). Legal status and SIREN number: <mark class="todo">[FOUNDER TO CONFIRM]</mark></li>
+  <li>Postal address and telephone: <mark class="todo">[FOUNDER TO CONFIRM]</mark></li>
+  <li>Email: <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></li>
+  <li>Publication director: Thomas Sobstyl</li>
+  <li>Website hosting: GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States.</li>
+  <li>App data hosting: Supabase, Inc., on Amazon Web Services servers located in Paris (eu-west-3 region).</li>
+</ul>
+</section>
+</article>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-block" data-lang="fr">
+      <nav aria-label="Liens utiles">
+        <ul class="footer-links">
+          <li><a href="privacy.html#fr">Confidentialité</a></li>
+          <li><a href="terms.html#fr">Conditions d’utilisation</a></li>
+          <li><a href="terms.html#fr-mentions-legales">Mentions légales</a></li>
+          <li><a href="support.html#fr">Aide et contact</a></li>
+          <li><a href="children.html#fr">Pour les enfants</a></li>
+          <li><a href="press.html#fr">Presse</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Ce site n’utilise aucun cookie ni aucun traceur. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+    <div class="footer-block" data-lang="en" lang="en">
+      <nav aria-label="Useful links">
+        <ul class="footer-links">
+          <li><a href="privacy.html#en">Privacy</a></li>
+          <li><a href="terms.html#en">Terms of use</a></li>
+          <li><a href="terms.html#en-legal-notice">Legal notice</a></li>
+          <li><a href="support.html#en">Help and contact</a></li>
+          <li><a href="children.html#en">For children</a></li>
+          <li><a href="press.html#en">Press</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">This website uses no cookies and no trackers. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="fr" data-title-fr="Aide et contact · Kamelo" data-title-en="Help and contact · Kamelo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'sha256-I9BgKOawifnJGNiBx4F5HJiavsiwz4P4nHcMTh/zUJw='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Aide et contact · Kamelo</title>
+<meta name="description" content="Aide Kamelo : contact, conseils pour scanner les devoirs, vos données, suppression du compte, gestion de l’abonnement. Kamelo help and contact in English.">
+<link rel="canonical" href="https://fox1304.github.io/kamelo-site/support.html">
+<meta property="og:url" content="https://fox1304.github.io/kamelo-site/support.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamelo">
+<meta property="og:title" content="Aide et contact · Kamelo">
+<meta property="og:description" content="Aide Kamelo : contact, conseils pour scanner les devoirs, vos données, suppression du compte, gestion de l’abonnement. Kamelo help and contact in English.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF8EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>(function () {
+  var root = document.documentElement, loc = window.location;
+  function langOf(h) {
+    h = (h || "").replace(/^#/, "").toLowerCase();
+    if (h === "en" || h.slice(0, 3) === "en-") return "en";
+    if (h === "fr" || h.slice(0, 3) === "fr-") return "fr";
+    return null;
+  }
+  function browserLang() {
+    var list = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase().slice(0, 2);
+      if (l === "fr" || l === "en") return l;
+    }
+    return "fr";
+  }
+  function apply(lang) {
+    root.setAttribute("data-show", lang);
+    root.setAttribute("lang", lang);
+    var t = root.getAttribute("data-title-" + lang);
+    if (t) document.title = t;
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) {
+      if (sw[i].getAttribute("data-set-lang") === lang) sw[i].setAttribute("aria-current", "true");
+      else sw[i].removeAttribute("aria-current");
+    }
+  }
+  var h = loc.hash.slice(1).toLowerCase();
+  if ((h === "fr" || h === "en") && window.history.replaceState) window.history.replaceState(null, "", loc.pathname + loc.search);
+  apply(langOf(h) || browserLang());
+  window.addEventListener("hashchange", function () { var l = langOf(loc.hash); if (l) apply(l); });
+  document.addEventListener("DOMContentLoaded", function () {
+    apply(root.getAttribute("data-show"));
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) sw[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      apply(this.getAttribute("data-set-lang"));
+    });
+    var art = document.querySelector("[data-kamelo]");
+    var skins = document.querySelectorAll("[data-skin]");
+    for (var j = 0; j < skins.length; j++) skins[j].addEventListener("click", function () {
+      if (art) {
+        art.style.setProperty("--k-skin", this.getAttribute("data-skin"));
+        art.style.setProperty("--k-deep", this.getAttribute("data-deep"));
+        art.style.setProperty("--k-light", this.getAttribute("data-light"));
+      }
+      for (var k = 0; k < skins.length; k++) skins[k].setAttribute("aria-pressed", skins[k] === this ? "true" : "false");
+    });
+  });
+})();</script>
+</head>
+<body class="page-support">
+<a class="skip" href="#main"><span data-lang="fr">Aller au contenu</span><span data-lang="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="40" height="40"><span>Kamelo</span></a>
+    <nav class="nav" aria-label="Menu">
+      <ul>
+        <li data-lang="fr"><a href="index.html#fr-comment-ca-marche">Comment ça marche</a></li>
+        <li data-lang="fr"><a href="privacy.html#fr">Confidentialité</a></li>
+        <li data-lang="fr"><a href="support.html#fr" aria-current="page">Aide</a></li>
+        <li data-lang="en" lang="en"><a href="index.html#en-how-it-works">How it works</a></li>
+        <li data-lang="en" lang="en"><a href="privacy.html#en">Privacy</a></li>
+        <li data-lang="en" lang="en"><a href="support.html#en" aria-current="page">Help</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <a href="#fr" hreflang="fr" lang="fr" data-set-lang="fr" aria-label="Français">FR</a>
+      <a href="#en" hreflang="en" lang="en" data-set-lang="en" aria-label="English">EN</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap narrow">
+<article class="doc" data-lang="fr" lang="fr" id="fr">
+  <header class="doc-head">
+    <p class="eyebrow">Kamelo</p>
+    <h1>Aide et contact</h1>
+  </header>
+
+  <aside class="callout contact">
+    <h2>Écrivez-nous</h2>
+    <p>Une question, un problème, une idée&#8239;? Nous répondons personnellement, en français ou en anglais.</p>
+    <p><a class="btn" href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+    <p class="small">Cette adresse est aussi notre point de contact unique au titre du règlement européen sur les services numériques (DSA), pour les autorités comme pour les utilisateurs.</p>
+  </aside>
+
+  <section aria-labelledby="fr-scanner">
+    <h2 id="fr-scanner">Scanner les devoirs</h2>
+    <details>
+      <summary>Comment réussir un scan&#8239;?</summary>
+      <ul>
+        <li>Cadrez uniquement la consigne, la liste de mots ou la leçon, à plat et bien éclairée, sans ombre.</li>
+        <li>Une page à la fois&#8239;; vous pouvez ajouter une autre page ou importer une capture d’écran de l’application de l’école («&nbsp;Importer une photo&nbsp;»).</li>
+        <li>Si l’application signale une photo floue, un texte trop petit ou trop sombre, reprenez-la de plus près.</li>
+        <li>Évitez de photographier des visages ou des documents personnels.</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Kamelo s’est trompé&#8239;: que faire&#8239;?</summary>
+      <p>Chaque exercice s’affiche sur une carte de confirmation que vous pouvez modifier avant de la valider. Si ce n’est pas le bon exercice, touchez «&nbsp;Ce n’est pas ça&nbsp;» pour reprendre la photo ou saisir le devoir à la main. Un contenu vous semble inadapté&#8239;? Touchez «&nbsp;Signaler un problème&nbsp;».</p>
+    </details>
+    <details>
+      <summary>Kamelo ne connaît pas ce type de devoir</summary>
+      <p>Vous pouvez le suivre comme une tâche à cocher, ou demander à Kamelo d’apprendre ce type d’exercice. Avec votre accord, la photo est alors conservée 30&nbsp;jours pour être étudiée, puis supprimée&#8239;; nous vous répondons dans l’application («&nbsp;Mes demandes&nbsp;»).</p>
+    </details>
+    <details>
+      <summary>Pourquoi 3 scans par semaine&#8239;?</summary>
+      <p>La version gratuite comprend 3 scans par semaine (du lundi au dimanche) et 1 profil d’enfant. Les exercices déjà créés restent illimités, et la saisie manuelle est toujours possible. Kamelo Premium offre des scans illimités et jusqu’à 3 enfants.</p>
+    </details>
+  </section>
+
+  <section aria-labelledby="fr-donnees">
+    <h2 id="fr-donnees">Vos données</h2>
+    <details>
+      <summary>Qu’est-ce qui est envoyé à l’IA&#8239;?</summary>
+      <p>Uniquement la photo recadrée du devoir, dont le nom, la classe et la date en haut de page sont masqués sur votre téléphone, avec la classe, le programme et la langue. Jamais le prénom de votre enfant. La photo est lue par Claude (Anthropic, aux États-Unis) puis supprimée de nos serveurs sous 24&nbsp;heures. Rien n’est envoyé à l’IA sans votre accord, que vous pouvez retirer dans Réglages › Confidentialité.</p>
+    </details>
+    <details>
+      <summary>Où sont stockées mes données&#8239;?</summary>
+      <p>Sur votre appareil et sur nos serveurs situés à Paris (Union européenne). Tous les détails figurent dans la <a href="privacy.html#fr">politique de confidentialité</a>.</p>
+    </details>
+    <details>
+      <summary>Comment exporter mes données&#8239;?</summary>
+      <p>Espace parent › Réglages › Confidentialité › «&nbsp;Exporter mes données&nbsp;». Vous recevez un lien vers un fichier JSON, valable 1&nbsp;heure.</p>
+    </details>
+  </section>
+
+  <section aria-labelledby="fr-supprimer">
+    <h2 id="fr-supprimer">Supprimer vos données</h2>
+    <details open>
+      <summary>Depuis l’application</summary>
+      <p>Espace parent › Réglages › Confidentialité › «&nbsp;Supprimer mon compte et toutes les données&nbsp;», puis confirmez avec votre code parent. Tout est supprimé immédiatement de nos serveurs et de l’appareil. Pour supprimer seulement le profil d’un enfant et ses progrès, ouvrez ce profil dans l’espace parent et touchez «&nbsp;Supprimer ce profil&nbsp;».</p>
+    </details>
+    <details open>
+      <summary>Sans l’application</summary>
+      <p>Écrivez à <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a> depuis l’adresse e-mail de votre compte (ou indiquez l’adresse utilisée avec «&nbsp;Se connecter avec Apple&nbsp;»), avec pour objet «&nbsp;Suppression de compte&nbsp;». Nous supprimons le compte et toutes les données associées dans un délai d’un mois au plus et vous le confirmons.</p>
+      <p>Si vous utilisiez Kamelo sans compte, vos données ne sont reliées à aucune adresse&#8239;: supprimez-les depuis l’application. À défaut, elles sont effacées automatiquement après 18&nbsp;mois d’inactivité.</p>
+    </details>
+    <details>
+      <summary>Supprimer mon compte résilie-t-il mon abonnement&#8239;?</summary>
+      <p>Non. L’abonnement est géré par l’App Store ou Google Play&#8239;: résiliez-le avec les liens ci-dessous.</p>
+    </details>
+  </section>
+
+  <section aria-labelledby="fr-abonnement">
+    <h2 id="fr-abonnement">Abonnement</h2>
+    <details open>
+      <summary>Gérer ou résilier Kamelo Premium</summary>
+      <ul>
+        <li>iPhone et iPad&#8239;: <a href="https://apps.apple.com/account/subscriptions">gérer mes abonnements App Store</a>, ou Réglages › votre nom › Abonnements.</li>
+        <li>Android&#8239;: <a href="https://play.google.com/store/account/subscriptions">gérer mes abonnements Google Play</a>.</li>
+        <li>Dans Kamelo&#8239;: espace parent › Réglages › Abonnement › «&nbsp;Gérer / résilier mon abonnement&nbsp;».</li>
+      </ul>
+      <p>La résiliation prend effet à la fin de la période en cours&#8239;; vos exercices et progrès sont conservés.</p>
+    </details>
+    <details>
+      <summary>Essai gratuit</summary>
+      <p>L’abonnement annuel peut comprendre 7&nbsp;jours d’essai gratuit. Si vous ne résiliez pas avant la fin de l’essai (sur l’App Store, au moins 24&nbsp;heures avant), l’abonnement annuel démarre et vous est facturé.</p>
+    </details>
+    <details>
+      <summary>Remboursement</summary>
+      <p>Les paiements sont encaissés par Apple ou Google&#8239;: demandez un remboursement sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> ou depuis <a href="https://support.google.com/googleplay/answer/2479637">l’aide Google Play</a>. Nous vous aidons volontiers si besoin.</p>
+    </details>
+    <details>
+      <summary>Restaurer mes achats sur un autre appareil</summary>
+      <p>Connectez-vous au même compte, ou touchez «&nbsp;Restaurer mes achats&nbsp;» dans Réglages › Abonnement.</p>
+    </details>
+  </section>
+
+  <section aria-labelledby="fr-code">
+    <h2 id="fr-code">Code parent, voix et accessibilité</h2>
+    <details>
+      <summary>J’ai oublié mon code parent</summary>
+      <p>Sur l’écran du code, touchez «&nbsp;Code oublié&nbsp;?&nbsp;», passez la vérification adulte, puis choisissez un nouveau code.</p>
+    </details>
+    <details>
+      <summary>La voix est peu naturelle</summary>
+      <p>Kamelo utilise les voix de votre appareil. Téléchargez une voix «&nbsp;améliorée&nbsp;»&#8239;: sur iPhone et iPad, Réglages › Accessibilité › Contenu énoncé › Voix&#8239;; sur Android, dans les réglages de synthèse vocale (l’emplacement varie selon l’appareil).</p>
+    </details>
+    <details>
+      <summary>Accessibilité</summary>
+      <p>Kamelo suit la taille du texte, VoiceOver et TalkBack, et l’option «&nbsp;Réduire les animations&nbsp;» de votre appareil. Des polices adaptées aux jeunes lecteurs et aux lecteurs dyslexiques sont proposées dans les réglages.</p>
+    </details>
+  </section>
+</article>
+
+<article class="doc" data-lang="en" lang="en" id="en">
+  <header class="doc-head">
+    <p class="eyebrow">Kamelo</p>
+    <h1>Help and contact</h1>
+  </header>
+
+  <aside class="callout contact">
+    <h2>Write to us</h2>
+    <p>A question, a problem, an idea? We reply personally, in English or French.</p>
+    <p><a class="btn" href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+    <p class="small">This address is also our single point of contact under the EU Digital Services Act (DSA), for authorities and users alike.</p>
+  </aside>
+
+  <section aria-labelledby="en-scanning">
+    <h2 id="en-scanning">Scanning homework</h2>
+    <details>
+      <summary>How do I get a good scan?</summary>
+      <ul>
+        <li>Frame only the instruction, the word list or the lesson, flat and well lit, without shadows.</li>
+        <li>One page at a time; you can add another page or import a screenshot from the school’s app (“Import a photo”).</li>
+        <li>If the app warns that the photo is blurry, the text too small or too dark, take it again from closer.</li>
+        <li>Avoid photographing faces or personal documents.</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Kamelo got it wrong: what should I do?</summary>
+      <p>Each exercise appears on a confirmation card that you can edit before approving it. If it is the wrong exercise, tap “That’s not it” to retake the photo or type the homework in. Content seems unsuitable? Tap “Report a problem”.</p>
+    </details>
+    <details>
+      <summary>Kamelo doesn’t know this kind of homework</summary>
+      <p>You can track it as a checklist task, or ask Kamelo to learn this exercise type. With your consent, the photo is then kept for 30 days for review, then deleted; we reply inside the app (“My requests”).</p>
+    </details>
+    <details>
+      <summary>Why 3 scans a week?</summary>
+      <p>The free version includes 3 scans a week (Monday to Sunday) and 1 child profile. Exercises already created stay unlimited, and you can always type homework in by hand. Kamelo Premium gives unlimited scans and up to 3 children.</p>
+    </details>
+  </section>
+
+  <section aria-labelledby="en-your-data">
+    <h2 id="en-your-data">Your data</h2>
+    <details>
+      <summary>What is sent to the AI?</summary>
+      <p>Only the cropped homework photo, with the name, class and date at the top of the page masked on your phone, plus the school year, curriculum and language. Never your child’s first name. The photo is read by Claude (Anthropic, in the United States), then deleted from our servers within 24 hours. Nothing is sent to the AI without your consent, which you can withdraw in Settings › Privacy.</p>
+    </details>
+    <details>
+      <summary>Where is my data stored?</summary>
+      <p>On your device and on our servers in Paris (European Union). All the details are in the <a href="privacy.html#en">privacy policy</a>.</p>
+    </details>
+    <details>
+      <summary>How do I export my data?</summary>
+      <p>Parent space › Settings › Privacy › “Export my data”. You get a link to a JSON file, valid for 1 hour.</p>
+    </details>
+  </section>
+
+  <section aria-labelledby="en-delete">
+    <h2 id="en-delete">Deleting your data</h2>
+    <details open>
+      <summary>From the app</summary>
+      <p>Parent space › Settings › Privacy › “Delete my account and all data”, then confirm with your parent code. Everything is deleted immediately from our servers and from the device. To delete only a child’s profile and progress, open that profile in the parent space and tap “Delete this profile”.</p>
+    </details>
+    <details open>
+      <summary>Without the app</summary>
+      <p>Write to <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a> from your account’s email address (or give the address used with “Sign in with Apple”), with the subject “Account deletion”. We delete the account and all associated data within one month at most and confirm it to you.</p>
+      <p>If you used Kamelo without an account, your data is not linked to any address: delete it from the app. Otherwise, it is erased automatically after 18 months of inactivity.</p>
+    </details>
+    <details>
+      <summary>Does deleting my account cancel my subscription?</summary>
+      <p>No. The subscription is managed by the App Store or Google Play: cancel it with the links below.</p>
+    </details>
+  </section>
+
+  <section aria-labelledby="en-subscription">
+    <h2 id="en-subscription">Subscription</h2>
+    <details open>
+      <summary>Manage or cancel Kamelo Premium</summary>
+      <ul>
+        <li>iPhone and iPad: <a href="https://apps.apple.com/account/subscriptions">manage my App Store subscriptions</a>, or Settings › your name › Subscriptions.</li>
+        <li>Android: <a href="https://play.google.com/store/account/subscriptions">manage my Google Play subscriptions</a>.</li>
+        <li>In Kamelo: parent space › Settings › Subscription › “Manage / cancel subscription”.</li>
+      </ul>
+      <p>Cancellation takes effect at the end of the current period; your exercises and progress are kept.</p>
+    </details>
+    <details>
+      <summary>Free trial</summary>
+      <p>The annual subscription may include a 7-day free trial. If you don’t cancel before the trial ends (on the App Store, at least 24 hours before), the annual subscription starts and you are charged.</p>
+    </details>
+    <details>
+      <summary>Refunds</summary>
+      <p>Payments are collected by Apple or Google: request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> or through <a href="https://support.google.com/googleplay/answer/2479637">Google Play help</a>. We are happy to help if needed.</p>
+    </details>
+    <details>
+      <summary>Restore purchases on another device</summary>
+      <p>Sign in to the same account, or tap “Restore purchases” in Settings › Subscription.</p>
+    </details>
+  </section>
+
+  <section aria-labelledby="en-code">
+    <h2 id="en-code">Parent code, voices and accessibility</h2>
+    <details>
+      <summary>I forgot my parent code</summary>
+      <p>On the code screen, tap “Forgot your code?”, pass the adult check, then choose a new code.</p>
+    </details>
+    <details>
+      <summary>The voice sounds robotic</summary>
+      <p>Kamelo uses your device’s voices. Download an “enhanced” voice: on iPhone and iPad, Settings › Accessibility › Spoken Content › Voices; on Android, in the text-to-speech settings (the location depends on the device).</p>
+    </details>
+    <details>
+      <summary>Accessibility</summary>
+      <p>Kamelo follows your device’s text size, VoiceOver and TalkBack, and the “Reduce motion” option. Fonts designed for young readers and dyslexic readers are available in the settings.</p>
+    </details>
+  </section>
+</article>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-block" data-lang="fr">
+      <nav aria-label="Liens utiles">
+        <ul class="footer-links">
+          <li><a href="privacy.html#fr">Confidentialité</a></li>
+          <li><a href="terms.html#fr">Conditions d’utilisation</a></li>
+          <li><a href="terms.html#fr-mentions-legales">Mentions légales</a></li>
+          <li><a href="support.html#fr">Aide et contact</a></li>
+          <li><a href="children.html#fr">Pour les enfants</a></li>
+          <li><a href="press.html#fr">Presse</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Ce site n’utilise aucun cookie ni aucun traceur. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+    <div class="footer-block" data-lang="en" lang="en">
+      <nav aria-label="Useful links">
+        <ul class="footer-links">
+          <li><a href="privacy.html#en">Privacy</a></li>
+          <li><a href="terms.html#en">Terms of use</a></li>
+          <li><a href="terms.html#en-legal-notice">Legal notice</a></li>
+          <li><a href="support.html#en">Help and contact</a></li>
+          <li><a href="children.html#en">For children</a></li>
+          <li><a href="press.html#en">Press</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">This website uses no cookies and no trackers. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

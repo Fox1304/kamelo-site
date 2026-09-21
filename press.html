@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr" data-title-fr="Presse · Kamelo" data-title-en="Press · Kamelo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'sha256-I9BgKOawifnJGNiBx4F5HJiavsiwz4P4nHcMTh/zUJw='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Presse · Kamelo</title>
+<meta name="description" content="Kit presse Kamelo : description, chiffres clés, pays, âges, plateformes et contact. Kamelo press kit in English.">
+<link rel="canonical" href="https://fox1304.github.io/kamelo-site/press.html">
+<meta property="og:url" content="https://fox1304.github.io/kamelo-site/press.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamelo">
+<meta property="og:title" content="Presse · Kamelo">
+<meta property="og:description" content="Kit presse Kamelo : description, chiffres clés, pays, âges, plateformes et contact. Kamelo press kit in English.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF8EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>(function () {
+  var root = document.documentElement, loc = window.location;
+  function langOf(h) {
+    h = (h || "").replace(/^#/, "").toLowerCase();
+    if (h === "en" || h.slice(0, 3) === "en-") return "en";
+    if (h === "fr" || h.slice(0, 3) === "fr-") return "fr";
+    return null;
+  }
+  function browserLang() {
+    var list = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase().slice(0, 2);
+      if (l === "fr" || l === "en") return l;
+    }
+    return "fr";
+  }
+  function apply(lang) {
+    root.setAttribute("data-show", lang);
+    root.setAttribute("lang", lang);
+    var t = root.getAttribute("data-title-" + lang);
+    if (t) document.title = t;
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) {
+      if (sw[i].getAttribute("data-set-lang") === lang) sw[i].setAttribute("aria-current", "true");
+      else sw[i].removeAttribute("aria-current");
+    }
+  }
+  var h = loc.hash.slice(1).toLowerCase();
+  if ((h === "fr" || h === "en") && window.history.replaceState) window.history.replaceState(null, "", loc.pathname + loc.search);
+  apply(langOf(h) || browserLang());
+  window.addEventListener("hashchange", function () { var l = langOf(loc.hash); if (l) apply(l); });
+  document.addEventListener("DOMContentLoaded", function () {
+    apply(root.getAttribute("data-show"));
+    var sw = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < sw.length; i++) sw[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      apply(this.getAttribute("data-set-lang"));
+    });
+    var art = document.querySelector("[data-kamelo]");
+    var skins = document.querySelectorAll("[data-skin]");
+    for (var j = 0; j < skins.length; j++) skins[j].addEventListener("click", function () {
+      if (art) {
+        art.style.setProperty("--k-skin", this.getAttribute("data-skin"));
+        art.style.setProperty("--k-deep", this.getAttribute("data-deep"));
+        art.style.setProperty("--k-light", this.getAttribute("data-light"));
+      }
+      for (var k = 0; k < skins.length; k++) skins[k].setAttribute("aria-pressed", skins[k] === this ? "true" : "false");
+    });
+  });
+})();</script>
+</head>
+<body class="page-press">
+<a class="skip" href="#main"><span data-lang="fr">Aller au contenu</span><span data-lang="en" lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="40" height="40"><span>Kamelo</span></a>
+    <nav class="nav" aria-label="Menu">
+      <ul>
+        <li data-lang="fr"><a href="index.html#fr-comment-ca-marche">Comment ça marche</a></li>
+        <li data-lang="fr"><a href="privacy.html#fr">Confidentialité</a></li>
+        <li data-lang="fr"><a href="support.html#fr">Aide</a></li>
+        <li data-lang="en" lang="en"><a href="index.html#en-how-it-works">How it works</a></li>
+        <li data-lang="en" lang="en"><a href="privacy.html#en">Privacy</a></li>
+        <li data-lang="en" lang="en"><a href="support.html#en">Help</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <a href="#fr" hreflang="fr" lang="fr" data-set-lang="fr" aria-label="Français">FR</a>
+      <a href="#en" hreflang="en" lang="en" data-set-lang="en" aria-label="English">EN</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap narrow">
+<article class="doc" data-lang="fr" lang="fr" id="fr">
+  <header class="doc-head">
+    <p class="eyebrow">Kamelo</p>
+    <h1>Espace presse</h1>
+    <p class="doc-meta">«&nbsp;Les devoirs du soir, sans dispute.&nbsp;»</p>
+  </header>
+
+  <section aria-labelledby="fr-en-bref">
+    <h2 id="fr-en-bref">Kamelo en un paragraphe</h2>
+    <p>Kamelo est une application pour les parents d’enfants de 6 à 11 ans. Le parent photographie la consigne du cahier de textes ou la leçon&#8239;; une intelligence artificielle (Claude, d’Anthropic) reconnaît l’exercice parmi dix types (dictée, mots invariables, tables, calcul, nombres, conjugaison, poésie, leçon, vocabulaire) et le parent le confirme. L’enfant s’entraîne ensuite une dizaine de minutes avec Kamelo, un caméléon qui change de couleur selon la matière. Pas de publicité, pas de discussion avec l’IA, et la photo est effacée sous 24&nbsp;heures.</p>
+    <p lang="en" class="alt-lang"><strong>In English:</strong> Kamelo is an app for parents of children aged 6 to 11. The parent photographs the homework instruction or the lesson; an AI (Anthropic’s Claude) recognises the exercise among ten types (spelling, sight words, times tables, arithmetic, numbers, conjugation, poems, lessons, vocabulary) and the parent confirms it. The child then practises for about ten minutes with Kamelo, a chameleon that changes colour with the subject. No ads, no chatting with AI, and the photo is deleted within 24 hours.</p>
+  </section>
+
+  <section aria-labelledby="fr-faits">
+    <h2 id="fr-faits">Faits clés</h2>
+    <dl class="facts-list">
+      <dt>Éditeur</dt><dd>Thomas Sobstyl, développeur indépendant, France</dd>
+      <dt>Pays</dt><dd>France d’abord, puis Royaume-Uni et États-Unis</dd>
+      <dt>Âges</dt><dd>6 à 11 ans (CP au CM2, Year 1 à Year 6, Kindergarten à Grade 5)</dd>
+      <dt>Plateformes</dt><dd>iPhone et iPad (iOS 18 ou plus récent), téléphones et tablettes Android (Android 9 ou plus récent)</dd>
+      <dt>Langues</dt><dd>Français, anglais (Royaume-Uni et États-Unis)</dd>
+      <dt>Modèle</dt><dd>Gratuit (3 scans par semaine, 1 enfant) et abonnement Kamelo Premium (annuel avec 7 jours d’essai, ou mensuel). Aucune publicité.</dd>
+      <dt>Intelligence artificielle</dt><dd>Claude (Anthropic) lit la consigne&#8239;; le parent confirme chaque exercice avant l’enfant.</dd>
+      <dt>Données</dt><dd>Hébergées à Paris&#8239;; photos supprimées sous 24&nbsp;heures&#8239;; aucun traceur dans l’espace enfant.</dd>
+      <dt>Statut</dt><dd>En test (bêta)&#8239;; bientôt sur l’App Store et Google Play.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="fr-messages">
+    <h2 id="fr-messages">Ce qui rend Kamelo différent</h2>
+    <ul>
+      <li><strong>L’entraînement, pas les réponses</strong>&#8239;: Kamelo ne fait pas les devoirs, il fait réviser.</li>
+      <li><strong>Exactement ce que l’enseignant a demandé</strong>&#8239;: la liste de mots de la semaine, la table du jour, la leçon à apprendre.</li>
+      <li><strong>Le parent pilote l’IA</strong>&#8239;: l’enfant ne voit que des contenus relus par un adulte, et ne parle jamais à une IA.</li>
+      <li><strong>Vie privée dès la conception</strong>&#8239;: nom masqué sur le téléphone, photo effacée sous 24&nbsp;heures, aucune publicité.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="fr-visuels">
+    <h2 id="fr-visuels">Visuels et contact</h2>
+    <p>Logo&#8239;: <a href="favicon.svg">favicon.svg</a> (vectoriel). Captures d’écran et animations de Kamelo sur demande.</p>
+    <p>Contact presse&#8239;: Thomas Sobstyl, <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+  </section>
+</article>
+
+<article class="doc" data-lang="en" lang="en" id="en">
+  <header class="doc-head">
+    <p class="eyebrow">Kamelo</p>
+    <h1>Press kit</h1>
+    <p class="doc-meta">“Tonight’s homework, without the fight.”</p>
+  </header>
+
+  <section aria-labelledby="en-in-short">
+    <h2 id="en-in-short">Kamelo in one paragraph</h2>
+    <p>Kamelo is an app for parents of children aged 6 to 11. The parent photographs the homework instruction or the lesson; an AI (Anthropic’s Claude) recognises the exercise among ten types (spelling, sight words, times tables, arithmetic, numbers, conjugation, poems, lessons, vocabulary) and the parent confirms it. The child then practises for about ten minutes with Kamelo, a chameleon that changes colour with the subject. No ads, no chatting with AI, and the photo is deleted within 24 hours.</p>
+    <p lang="fr" class="alt-lang"><strong>En français&#8239;:</strong> Kamelo est une application pour les parents d’enfants de 6 à 11 ans. Le parent photographie la consigne du cahier de textes ou la leçon&#8239;; une intelligence artificielle (Claude, d’Anthropic) reconnaît l’exercice parmi dix types et le parent le confirme. L’enfant s’entraîne ensuite une dizaine de minutes avec Kamelo, un caméléon qui change de couleur selon la matière. Pas de publicité, pas de discussion avec l’IA, et la photo est effacée sous 24&nbsp;heures.</p>
+  </section>
+
+  <section aria-labelledby="en-facts">
+    <h2 id="en-facts">Key facts</h2>
+    <dl class="facts-list">
+      <dt>Publisher</dt><dd>Thomas Sobstyl, independent developer, France</dd>
+      <dt>Countries</dt><dd>France first, then the United Kingdom and the United States</dd>
+      <dt>Ages</dt><dd>6 to 11 (Year 1 to Year 6, Kindergarten to Grade 5, CP to CM2)</dd>
+      <dt>Platforms</dt><dd>iPhone and iPad (iOS 18 or later), Android phones and tablets (Android 9 or later)</dd>
+      <dt>Languages</dt><dd>English (UK and US), French</dd>
+      <dt>Business model</dt><dd>Free (3 scans a week, 1 child) and a Kamelo Premium subscription (annual with a 7-day trial, or monthly). No advertising.</dd>
+      <dt>Artificial intelligence</dt><dd>Claude (Anthropic) reads the instruction; the parent confirms every exercise before the child sees it.</dd>
+      <dt>Data</dt><dd>Hosted in Paris; photos deleted within 24 hours; no tracking in the child space.</dd>
+      <dt>Status</dt><dd>In testing (beta); coming soon to the App Store and Google Play.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="en-messages">
+    <h2 id="en-messages">What makes Kamelo different</h2>
+    <ul>
+      <li><strong>Practice, not answers</strong>: Kamelo does not do the homework, it helps children practise.</li>
+      <li><strong>Exactly what the teacher set</strong>: this week’s spelling list, tonight’s times table, the lesson to learn.</li>
+      <li><strong>Parents run the AI</strong>: children only see content an adult has reviewed, and never talk to an AI.</li>
+      <li><strong>Private by design</strong>: name masked on the phone, photo deleted within 24 hours, no advertising.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="en-assets">
+    <h2 id="en-assets">Assets and contact</h2>
+    <p>Logo: <a href="favicon.svg">favicon.svg</a> (vector). Screenshots and Kamelo animations on request.</p>
+    <p>Press contact: Thomas Sobstyl, <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+  </section>
+</article>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-block" data-lang="fr">
+      <nav aria-label="Liens utiles">
+        <ul class="footer-links">
+          <li><a href="privacy.html#fr">Confidentialité</a></li>
+          <li><a href="terms.html#fr">Conditions d’utilisation</a></li>
+          <li><a href="terms.html#fr-mentions-legales">Mentions légales</a></li>
+          <li><a href="support.html#fr">Aide et contact</a></li>
+          <li><a href="children.html#fr">Pour les enfants</a></li>
+          <li><a href="press.html#fr">Presse</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Ce site n’utilise aucun cookie ni aucun traceur. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+    <div class="footer-block" data-lang="en" lang="en">
+      <nav aria-label="Useful links">
+        <ul class="footer-links">
+          <li><a href="privacy.html#en">Privacy</a></li>
+          <li><a href="terms.html#en">Terms of use</a></li>
+          <li><a href="terms.html#en-legal-notice">Legal notice</a></li>
+          <li><a href="support.html#en">Help and contact</a></li>
+          <li><a href="children.html#en">For children</a></li>
+          <li><a href="press.html#en">Press</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">This website uses no cookies and no trackers. <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a></p>
+      <p class="footer-copy">© 2026 Thomas Sobstyl · Kamelo</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
