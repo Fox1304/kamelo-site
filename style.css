@@ -458,6 +458,25 @@ main:focus { outline: none; }
   .steps { grid-template-columns: repeat(3, 1fr); }
 }
 
+/* The lead store frame: the photo becoming exercises, the one thing the page could not show in words. */
+.shot {
+  margin: 2rem auto 0;
+  max-width: 20rem;
+  text-align: center;
+}
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+.shot figcaption {
+  margin-top: 0.9rem;
+  color: var(--ink-2);
+  font-size: 0.95rem;
+}
+
 .step { position: relative; counter-increment: step; }
 
 .step::after {
